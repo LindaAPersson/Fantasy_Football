@@ -220,7 +220,7 @@ def team_orebro(player_name):
     next_step_two(player_name)
 
 def team_malmo(player_name):
-     """
+    """
     Runs when the users choose Malmö in drafted_two
     """
     print(f"Malmö performs well, but {player_name} struggles to make a name for themselves on the field.")
@@ -230,6 +230,9 @@ def team_malmo(player_name):
     next_step_three()
 
 def team_elfsborg(player_name):
+    """
+    Runs when the users choose Elfsborg in drafted_two
+    """
     print(f"{player_name} fits into Elfsborg quickly and effectively.")
     print(f"After just one season, {player_name} has already made a name for themselves in the entire league.")
     print(f"The future looks bright, but then the unexpected happens – during a collision, {player_name} breaks their ankle.")
@@ -238,19 +241,33 @@ def team_elfsborg(player_name):
     next_step_four(player_name)
 
 def team_sirius(player_name):
+    """
+    Runs when the users choose IK Sirius in drafted_three
+    """
     print(f"{player_name} absolutely loves playing for Sirius! The team feels like home immediately, and {player_name} gains significant trust.")
     print(f"In the second season, {player_name} wins the top scorer title and is offered a contract with:")
     next_step_five(player_name)
 
 def team_goteborg(player_name):
+    """
+    Runs when the users choose IFK Göteborg in drafted_three
+    """
     print(f"{player_name} enjoys playing in Göteborg; the team, atmosphere, and coach are good.")
     print(f"The team is a mid-table one, fighting for every point, and {player_name} enjoys it.")
     print(f"{player_name} has an okay first season, followed by good second and third seasons.")
     print(f"However, after three seasons, Örebro needs to sell {player_name} for financial reasons.")
     print(f"{player_name} receives offers from two clubs and chooses to go to:")
+    next_step_six(player_name)
 
 def team_aik(player_name):
-    print('aik')
+    """
+    Runs when the users choose AIK in drafted_four
+    """
+    print(f"The first season with AIK is challenging. {player_name} keeps on fighting, but things don't go well for the team.")
+    print(f"Midway through the season, the coach is fired.")
+    print(f"The new coach recognizes {player_name}´s potential, resulting in more playing time and attention.")
+    print(f"The team finishes at the bottom, but {player_name} receives offers from:")
+    next_step_seven(player_name)
 
 def team_djurgarden(player_name):
     print('Djurgården')
@@ -320,16 +337,31 @@ def next_step_five(player_name):
         print('wrong character, please try again')
         next_step_five(player_name)
 
-def next_step_six():
+def next_step_six(player_name):
+    """
+    Runs the options from the function team_goteborg
+    """
     next_step_six_options = input('1. Westham United \n2. Manchester United \n')
     if next_step_six_options = '1':
-        team_westham()
+        team_westham(player_name)
     elif next_step_six_options = '2':
-        team_manchester()
+        team_manchester(player_name)
     else:
         print('wrong character, please try again')
-        next_step_six()
+        next_step_six(player_name)
 
+def next_step_seven(player_name):
+    """
+    Runs the options from the function AIK
+    """
+    next_step_seven_options input('1. Ajax \n2. lissabon \n')
+    if next_step_seven_options = '1':
+        team_ajax(player_name)
+    elif next_step_seven_options = '2':
+        team_lissabon(player_name)
+    else:
+        print('wrong character, please try again')
+        next_step_seven(player_name)
 
 
 def youth_coach(player_name):
@@ -367,6 +399,12 @@ def team_westham():
 
 def team_manchester():
     print('ManchesterU')
+
+def team_ajax():
+    print('ajax')
+
+def team_lissabon():
+    print('lissabon')
 
 
 def main():
