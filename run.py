@@ -108,7 +108,6 @@ def choose_position_two(player_name):
     else:
         print('wrong character, please try again')
         choose_position_two(player_name)
-    
 
 def goalkeeper(player_name):
     """
@@ -117,7 +116,7 @@ def goalkeeper(player_name):
     print('Being a goalkeeper is a vulnerable position, noticeable immediately when making a mistake')
     print('The competition is also higher since only one goalkeeper is needed on the field')
     print(f"However, all the effort pays off when, after just two seasons, {player_name} gets recruited by:")
-    drafted_one()
+    drafted_one(player_name)
 
 def defender(player_name):
     """
@@ -126,7 +125,7 @@ def defender(player_name):
     print('Being a defender is a demanding and physical position!')
     print(f"{player_name} fights and works hard every match and training session to improve and learn from mistakes")
     print(f"After two seasons with GIF Sundsvall, all the hard work pays off, and {player_name} gets recruited by:")
-    drafted_two()
+    drafted_two(player_name)
 
 def striker(player_name):
     """
@@ -135,7 +134,7 @@ def striker(player_name):
     print(f"Endurance is crucial for a striker, it involves constant starts and rushes, and {player_name} loves it!")
     print(f"Thanks to {player_name} diligent training, the first season with GIF Sundsvall goes extremely well!")
     print('So well that NAME gets recruited by:')
-    drafted_three()
+    drafted_three(player_name)
 
 def midfielder(player_name):
     """
@@ -144,7 +143,7 @@ def midfielder(player_name):
     print(f"As a playmaker, endurance is essential, and luckily {player_name} loves to run!") 
     print(f"{player_name} runs so much that after just one season with GIF Sundsvall, two major teams express interest in recruiting {player_name}.")
     print(f"{player_name} goes to:")
-    drafted_four()
+    drafted_four(player_name)
 
 def drafted_one(player_name):
     """
@@ -227,7 +226,7 @@ def team_malmo(player_name):
     print(f"{player_name} gets limited playing time and isn't a regular player after the first season.")
     print(f"However, {player_name} improves during the second season, becoming a solid starter.")
     print(f"After four seasons with Malmö, NAME gets recruited by:")
-    next_step_three()
+    next_step_three(player_name)
 
 def team_elfsborg(player_name):
     """
@@ -270,6 +269,9 @@ def team_aik(player_name):
     next_step_seven(player_name)
 
 def team_djurgarden(player_name):
+    """
+    Runs when the users choose Djurgården IF in drafted_four
+    """
     print(f"It's challenging for {player_name} to break into a highly performing Malmö team.")
     print(f"The team tops the league and has stable midfielders. {player_name} keeps fighting and continues focusing on endurance.")
     print(f"After two seasons, playing time increases, and after four seasons, {player_name} becomes a seasoned and reliable starter.")
@@ -281,9 +283,9 @@ def next_step_one(player_name):
     Runs the options from the function team_halmstad
     """
     next_step_one_options = input('1. Coach for u-21 \n2. Goalkeeper coach \n')
-    if next_step_one_options = '1':
+    if next_step_one_options == '1':
         youth_coach(player_name)
-    elif next_step_one_options = '2':
+    elif next_step_one_options == '2':
         goalkeeper_coach(player_name)
     else: 
         print('wrong character, please try again')
@@ -307,9 +309,9 @@ def next_step_three(player_name):
     Runs the options from the function team_malmo
     """
     next_step_three_options = input('1. Leeds \n2. Copenhagen \n')
-    if next_step_three_options = '1':
+    if next_step_three_options == '1':
         team_leeds(player_name)
-    elif next_step_three_options = '2':
+    elif next_step_three_options == '2':
         team_copenhagen(player_name)
     else:
         print('wrong character, please try again')
@@ -320,9 +322,9 @@ def next_step_four(player_name):
     Runs the options from the function team_elfsborg
     """
     next_step_four_options = input('1. Coach \n2. Coach for minors \n')
-    if next_step_four_options = '1':
+    if next_step_four_options == '1':
         coach(player_name)
-    elif next_step_four_options = '2':
+    elif next_step_four_options == '2':
         junior_coach(player_name)
     else:
         print('wrong character, please try again')
@@ -333,11 +335,11 @@ def next_step_five(player_name):
     Runs the options from the function team_sirus
     """
     next_step_five_options = input('1. Roma \n2. Inter \n')
-    if next_step_five_options = '1':
+    if next_step_five_options == '1':
         team_roma(player_name)
-    elif next_step_five_options = '2':
+    elif next_step_five_options == '2':
         team_inter(player_name)
-    else
+    else:
         print('wrong character, please try again')
         next_step_five(player_name)
 
@@ -346,9 +348,9 @@ def next_step_six(player_name):
     Runs the options from the function team_goteborg
     """
     next_step_six_options = input('1. Westham United \n2. Manchester United \n')
-    if next_step_six_options = '1':
+    if next_step_six_options == '1':
         team_westham(player_name)
-    elif next_step_six_options = '2':
+    elif next_step_six_options == '2':
         team_manchester(player_name)
     else:
         print('wrong character, please try again')
@@ -358,31 +360,40 @@ def next_step_seven(player_name):
     """
     Runs the options from the function AIK
     """
-    next_step_seven_options input('1. Ajax \n2. lissabon \n')
-    if next_step_seven_options = '1':
+    next_step_seven_options = input('1. Ajax \n2. lissabon \n')
+    if next_step_seven_options == '1':
         team_ajax(player_name)
-    elif next_step_seven_options = '2':
+    elif next_step_seven_options == '2':
         team_lissabon(player_name)
     else:
         print('wrong character, please try again')
         next_step_seven(player_name)
 
 def next_step_eight(player_name):
+    """
+    Runs the options from the function djurgarden
+    """
     next_step_eight_options = input('1. Newcastle United \n2. Stoke \n')
-    if next_step_eight_options = '1':
+    if next_step_eight_options == '1':
         team_newcastle(player_name)
-    elif next_step_eight_options = '2':
+    elif next_step_eight_options == '2':
         team_stoke(player_name)
     else:
         print('wrong character, please try again')
         next_step_eight(player_name)
 
-
-
 def youth_coach(player_name):
-    print('juniortränare')
+    """
+    Runs when user choose Coach for u-21 in next_step_one
+    """
+    print(f"{player_name} starts their coaching career with hometown club GIF Sundsvall but quickly advances")
+    print(f"After five seasons, {player_name} receives an offer to become the national team coach for the U-21 national team.")
+    print(f"{player_name} accepts and manages to win the U-21 European Championship.")
 
 def goalkeeper_coach(player_name):
+    """
+    Runs when user choose Goalkeeper coach in next_step_one
+    """
     print('goal coach')
 
 def team_milan(player_name):
@@ -392,10 +403,13 @@ def team_fullham(player_name):
     print('fulllham')
 
 def team_leeds(player_name):
-    print('leeds')
+    print(f"{player_name} initially struggles in the English league, but after two seasons, physicality and playing time increase.")
+    print(f"{player_name} performs well and stays with the club for a remarkable nine seasons.")
 
 def team_copenhagen(player_name):
-    print('copehagen')
+    print(f"Things go well for {player_name} in FC Copenhagen, and after two seasons, the team plays in the Champions League.")
+    print("Even though the Danish league doesn't have the same standard, it becomes a good advertising window.")
+    print(f"After these matches, more top clubs show interest in {player_name}.")
 
 def coach(player_name):
     print('coach')
@@ -410,16 +424,21 @@ def team_inter(player_name):
     print('inter')
 
 def team_westham(player_name):
-    print('westham')
+    print(f"{player_name} falls out of favor with supporters after a heavy derby loss.")
+    print(f"The conflict escalates to the point where {player_name} is benched.")
+    print(f"{player_name} is forced to change teams after just one year, returning to IFK Göteborg.")
 
 def team_manchester(player_name):
     print('ManchesterU')
 
 def team_ajax(player_name):
-    print('ajax')
+    print(f"{player_name}gains significant trust from the coach immediately.")
+    print(f"{player_name} plays well, adapts to the pace and playing style right away.")
+    print(f"When the coach gets a new contract with Liverpool FC, he takes {player_name} with him!")
 
 def team_lissabon(player_name):
-    print('lissabon')
+    print(f"{player_name} makes a very good first impression, and both the coach and supporters see {player_name} as the team's star player after the first season")
+    print("Sporting Lisbon even wins the Europa League one year.")
 
 def team_newcastle(player_name):
     print('newcaste')
