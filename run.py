@@ -212,11 +212,11 @@ def team_orebro(player_name):
     """
     Runs when the users choose Örebro in drafted_one
     """
-    print(f"{player_name} enjoys playing in Örebro; the team, atmosphere, and coach are good.")
-    print(f"The team is a mid-table one, fighting for every point, and {player_name} enjoys it.")
-    print(f"{player_name} has an okay first season, followed by good second and third seasons.")
-    print(f"However, after three seasons, Örebro needs to sell {player_name} for financial reasons.")
-    print(f"{player_name} receives offers from two clubs and chooses to go to:")
+    print(f"Örebro has an experienced goalkeeper, so {player_name} doesn't get many minutes on the field.")
+    print(f"{player_name} plays in smaller cups and less critical matches, performing well but still not getting a spot in the first team.")
+    print(f"However, before the derby, the regular goalkeeper falls ill, giving {player_name} a chance.")
+    print(f"{player_name} performs exceptionally, making crucial saves, and the team wins!")
+    print(f"After that match, NAME gets more playing time, and more clubs express interest. NAME stays for three seasons before finally moving to")
     next_step_two(player_name)
 
 def team_malmo(player_name):
@@ -235,14 +235,19 @@ def team_elfsborg(player_name):
     print(f"The future looks bright, but then the unexpected happens – during a collision, {player_name} breaks their ankle.")
     print(f"After surgery and rehab, it's clear that {player_name} won't be able to come back as an elite player.")
     print(f"{player_name} decides to pursue a career as:")
+    next_step_four(player_name)
 
 def team_sirius(player_name):
     print(f"{player_name} absolutely loves playing for Sirius! The team feels like home immediately, and {player_name} gains significant trust.")
     print(f"In the second season, {player_name} wins the top scorer title and is offered a contract with:")
-
+    next_step_five(player_name)
 
 def team_goteborg(player_name):
-    print('göteborg')
+    print(f"{player_name} enjoys playing in Göteborg; the team, atmosphere, and coach are good.")
+    print(f"The team is a mid-table one, fighting for every point, and {player_name} enjoys it.")
+    print(f"{player_name} has an okay first season, followed by good second and third seasons.")
+    print(f"However, after three seasons, Örebro needs to sell {player_name} for financial reasons.")
+    print(f"{player_name} receives offers from two clubs and chooses to go to:")
 
 def team_aik(player_name):
     print('aik')
@@ -315,6 +320,17 @@ def next_step_five(player_name):
         print('wrong character, please try again')
         next_step_five(player_name)
 
+def next_step_six():
+    next_step_six_options = input('1. Westham United \n2. Manchester United \n')
+    if next_step_six_options = '1':
+        team_westham()
+    elif next_step_six_options = '2':
+        team_manchester()
+    else:
+        print('wrong character, please try again')
+        next_step_six()
+
+
 
 def youth_coach(player_name):
     print('juniortränare')
@@ -345,6 +361,12 @@ def team_roma():
 
 def team_inter():
     print('inter')
+
+def team_westham():
+    print('westham')
+
+def team_manchester():
+    print('ManchesterU')
 
 
 def main():
