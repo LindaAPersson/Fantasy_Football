@@ -55,7 +55,7 @@ def start_game(player_name):
     print(f"But {player_name} trains every day to progress further and what {player_name} enjoys training the most is (choose 1 or 2):")
     choose_training(player_name)
 
-def choose_training():
+def choose_training(player_name):
     choose_training = input ('1. Strenght \n2. Endurance \n')
 
     if choose_training == '1':
@@ -64,7 +64,7 @@ def choose_training():
         training_endurance(player_name)
     else:
         print('wrong character, please try again')
-        choose_training()
+        choose_training(player_name)
         
 def training_strenght(player_name):
     """
@@ -73,7 +73,7 @@ def training_strenght(player_name):
     print(f"All forms of training are essential, but {player_name} has a special passion to build muscles")
     print("Seeing oneself become stronger and stronger is very satisfying")
     print(f"Also, {player_name} needs the strength on the football field, as {player_name} plays as:")
-    choose_position_one()
+    choose_position_one(player_name)
 
 def training_endurance(player_name):
     """
@@ -82,46 +82,67 @@ def training_endurance(player_name):
     print(f"All forms of training are important, but {player_name} has a special passion for endurance")
     print(f"Being able to run both more and longer than opponents makes {player_name} stand out")
     print(f"especially in the last quarter of a football match! This is crucial as {player_name} plays as:")
-    choose_position_two()
+    choose_position_two(player_name)
 
-def choose_position_one():
+def choose_position_one(player_name):
     """
     Runs the options from the function training_strenght
     """
     choose_position_one = input('1. Goalkeeper\n2. Defender\n')
     if choose_position_one == '1':
-        goalkeeper()
+        goalkeeper(player_name)
     elif  choose_position_one == '2':
-        defender()
+        defender(player_name)
     else:
         print('wrong character, please try again')
         choose_position_one()
 
-def choose_position_two():
+def choose_position_two(player_name):
     """
     Runs the options from the function training_endurance
     """
     choose_position_two = input ('1. Striker\n2. Midfielder\n')
     if choose_position_two == '1':
-        striker()
+        striker(player_name)
     elif choose_position_two == '2':
-        midfielder()
+        midfielder(player_name)
     else:
         print('wrong character, please try again')
-        choose_position_two()
+        choose_position_two(player_name)
     
 
-def goalkeeper():
-    print('goalkeeper')
+def goalkeeper(player_name):
+    print('Being a goalkeeper is a vulnerable position, noticeable immediately when making a mistake')
+    print('The competition is also higher since only one goalkeeper is needed on the field')
+    print(f"However, all the effort pays off when, after just two seasons, {player_name} gets recruited by:")
+    drafted_one()
 
-def defender():
+def defender(player_name):
     print('defender')
 
-def striker():
+def striker(player_name):
     print('striker')
 
-def midfielder():
+def midfielder(player_name):
     print('midfielder') 
+
+def drafted_one():
+    drafted_one = input ('1. Halmstad BK \n2. Örebro \n')
+    if drafted_one == '1':
+        team_halmstad()
+    elif drafted_one == '2':
+        team_orebro()
+    else:
+        print('wrong character, please try again')
+        drafted_one()
+
+
+
+def team_halmstad():
+    print('halmstad')
+
+def team_orebro():
+    print('örebro')
 
 def main():
     """
@@ -136,7 +157,13 @@ def main():
     choose_training()
     training_strenght(player_name)
     training_endurance(player_name)
-    choose_position_one(player_name)
+    choose_position_one()
+    choose_position_two()
+    goalkeeper(player_name)
+    defender(player_name)
+    striker(player_name)
+    midfielder(player_name)
+    drafted_one()
 
 
 
