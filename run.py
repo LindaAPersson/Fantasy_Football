@@ -270,7 +270,11 @@ def team_aik(player_name):
     next_step_seven(player_name)
 
 def team_djurgarden(player_name):
-    print('Djurgården')
+    print(f"It's challenging for {player_name} to break into a highly performing Malmö team.")
+    print(f"The team tops the league and has stable midfielders. {player_name} keeps fighting and continues focusing on endurance.")
+    print(f"After two seasons, playing time increases, and after four seasons, {player_name} becomes a seasoned and reliable starter.")
+    print(f"fter six seasons with Malmö, {player_name} is recruited by:")
+    next_step_eight(player_name)
 
 def next_step_one(player_name):
     """
@@ -363,6 +367,17 @@ def next_step_seven(player_name):
         print('wrong character, please try again')
         next_step_seven(player_name)
 
+def next_step_eight(player_name):
+    next_step_eight_options = input('1. Newcastle United \n2. Stoke \n')
+    if next_step_eight_options = '1':
+        team_newcastle(player_name)
+    elif next_step_eight_options = '2':
+        team_stoke(player_name)
+    else:
+        print('wrong character, please try again')
+        next_step_eight(player_name)
+
+
 
 def youth_coach(player_name):
     print('juniortränare')
@@ -382,29 +397,35 @@ def team_leeds(player_name):
 def team_copenhagen(player_name):
     print('copehagen')
 
-def coach():
+def coach(player_name):
     print('coach')
 
-def junior_coach():
+def junior_coach(player_name):
     print('juniorcoach')
 
-def team_roma():
+def team_roma(player_name):
     print('roma')
 
-def team_inter():
+def team_inter(player_name):
     print('inter')
 
-def team_westham():
+def team_westham(player_name):
     print('westham')
 
-def team_manchester():
+def team_manchester(player_name):
     print('ManchesterU')
 
-def team_ajax():
+def team_ajax(player_name):
     print('ajax')
 
-def team_lissabon():
+def team_lissabon(player_name):
     print('lissabon')
+
+def team_newcastle(player_name):
+    print('newcaste')
+
+def team_stoke(player_name):
+    print('stoke')
 
 
 def main():
