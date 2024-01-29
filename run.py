@@ -230,7 +230,12 @@ def team_malmo(player_name):
     next_step_three()
 
 def team_elfsborg(player_name):
-    print('elfsborg')
+    print(f"{player_name} fits into Elfsborg quickly and effectively.")
+    print(f"After just one season, {player_name} has already made a name for themselves in the entire league.")
+    print(f"The future looks bright, but then the unexpected happens – during a collision, {player_name} breaks their ankle.")
+    print(f"After surgery and rehab, it's clear that {player_name} won't be able to come back as an elite player.")
+    print(f"{player_name} decides to pursue a career as:")
+
 
 def team_sirius(player_name):
     print('sirius')
@@ -283,6 +288,18 @@ def next_step_three(player_name):
         print('wrong character, please try again')
         next_step_three(player_name)
 
+def next_step_four():
+    """
+    Runs the options from the function team_elfsborg
+    """
+    next_step_four_options = input('1. Coach \n2. Coach for minors \n')
+    if next_step_four_options = '1':
+        coach()
+    elif next_step_four_options = '2':
+        junior_coach()
+    else:
+        print('wrong character, please try again')
+        next_step_four()
 
 def youth_coach(player_name):
     print('juniortränare')
@@ -302,6 +319,11 @@ def team_leeds(player_name):
 def team_copenhagen(player_name):
     print('copehagen')
 
+def coach():
+    print('coach')
+
+def junior_coach():
+    print('juniorcoach')
 
 
 def main():
