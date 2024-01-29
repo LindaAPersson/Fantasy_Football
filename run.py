@@ -56,10 +56,10 @@ def start_game(player_name):
     choose_training(player_name)
 
 def choose_training(player_name):
-    choose_training = input('choose 1 or 2:\n1. Strength \n2. Endurance \n')
-    if choose_training == '1':
+    choose_training_option = input('choose 1 or 2:\n1. Strength \n2. Endurance \n')
+    if choose_training_option == '1':
         training_strength(player_name)
-    elif choose_training == '2':
+    elif choose_training_option == '2':
         training_endurance(player_name)
     else:
         print('Wrong choice, please try again')
@@ -87,23 +87,23 @@ def choose_position_one(player_name):
     """
     Runs the options from the function training_strenght
     """
-    choose_position_one = input('1. Goalkeeper\n2. Defender\n')
-    if choose_position_one == '1':
+    choose_position_one_options = input('1. Goalkeeper\n2. Defender\n')
+    if choose_position_one_options == '1':
         goalkeeper(player_name)
-    elif  choose_position_one == '2':
+    elif  choose_position_one_options == '2':
         defender(player_name)
     else:
         print('wrong character, please try again')
-        choose_position_one()
+        choose_position_one(player_name)
 
 def choose_position_two(player_name):
     """
     Runs the options from the function training_endurance
     """
-    choose_position_two = input ('1. Striker\n2. Midfielder\n')
-    if choose_position_two == '1':
+    choose_position_two_options = input ('1. Striker\n2. Midfielder\n')
+    if choose_position_two_options == '1':
         striker(player_name)
-    elif choose_position_two == '2':
+    elif choose_position_two_options == '2':
         midfielder(player_name)
     else:
         print('wrong character, please try again')
@@ -129,19 +129,31 @@ def defender(player_name):
     drafted_two()
 
 def striker(player_name):
-    print('striker')
+    """
+    Runs when the users choose striker in choose_position_two
+    """
+    print(f"Endurance is crucial for a striker, it involves constant starts and rushes, and {player_name} loves it!")
+    print(f"Thanks to {player_name} diligent training, the first season with GIF Sundsvall goes extremely well!")
+    print('So well that NAME gets recruited by:')
+    drafted_three()
 
 def midfielder(player_name):
-    print('midfielder') 
+    """
+    Runs when the users choose midfielder in choose_position_two
+    """
+    print(f"As a playmaker, endurance is essential, and luckily {player_name} loves to run!") 
+    print(f"{player_name} runs so much that after just one season with GIF Sundsvall, two major teams express interest in recruiting {player_name}.")
+    print(f"{player_name} goes to:")
+    drafted_four()
 
 def drafted_one():
     """
     Runs the options from the function goalkeeper
     """
-    drafted_one = input ('1. Halmstad BK \n2. Örebro \n')
-    if drafted_one == '1':
+    drafted_one_options = input ('1. Halmstad BK \n2. Örebro \n')
+    if drafted_one_options == '1':
         team_halmstad()
-    elif drafted_one == '2':
+    elif drafted_one_options == '2':
         team_orebro()
     else:
         print('wrong character, please try again')
@@ -151,15 +163,40 @@ def drafted_two():
     """
     Runs the options from the function defender
     """
-    drafted_two = input('1. Malmö FF \n2. Elfsborg \n')
-    if drafted_two == '1':
+    drafted_two_options = input('1. Malmö FF \n2. Elfsborg \n')
+    if drafted_two_options == '1':
         team_malmo()
-    elif drafted_two == '2':
+    elif drafted_two_options == '2':
         team_elfsborg()
     else:
         print('wrong character, please try again')
         drafted_two()
 
+def drafted_three():
+    """
+    Runs the options from the function striker
+    """
+    drafted_three_options = input('1. IK Sirius \n2. IFK Göteborg \n')
+    if drafted_three_options == '1':
+        team_sirius()
+    elif drafted_three_options == '2':
+        team_goteborg()
+    else:
+        print('wrong character, please try again')
+        drafted_three()
+
+def drafted_four():
+    """
+    Runs the options from the function midfielder
+    """
+    drafted_four_options = input('1. AIK \n2. Djurgården IF \n')
+    if drafted_four_options == '1':
+        team_aik()
+    elif drafted_four_options == '2':
+        team_djurgarden()
+    else:
+        print('wrong character, please try again')
+        drafted_four()
 
 
 
@@ -175,6 +212,19 @@ def team_malmo():
 
 def team_elfsborg():
     print('elfsborg')
+
+def team_sirius():
+    print('sirius')
+
+def team_goteborg():
+    print('göteborg')
+
+def team_aik():
+    print('aik')
+
+def team_djurgarden():
+    print('Djurgården')
+
 
 def main():
     """
