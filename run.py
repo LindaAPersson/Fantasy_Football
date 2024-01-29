@@ -1,4 +1,4 @@
-def game_intro ():
+def game_intro():
     """
     Run games intro
     """
@@ -52,21 +52,20 @@ def start_game(player_name):
     print(f"Hello {player_name}, let´s see how long you can go!\n")
     print(f"{player_name} is a young and promising football player who loves and lives for the sport.")
     print(f"Currently, {player_name} is part of a smaller team in Division 1 in Sweden, GIF Sundsvall.")
-    print(f"But {player_name} trains every day to progress further and what {player_name} enjoys training the most is (choose 1 or 2):")
+    print(f"But {player_name} trains every day to progress further and what {player_name} enjoys training the most is")
     choose_training(player_name)
 
 def choose_training(player_name):
-    choose_training = input ('1. Strenght \n2. Endurance \n')
-
+    choose_training = input('choose 1 or 2:\n1. Strength \n2. Endurance \n')
     if choose_training == '1':
-        training_strenght(player_name)
+        training_strength(player_name)
     elif choose_training == '2':
         training_endurance(player_name)
     else:
-        print('wrong character, please try again')
+        print('Wrong choice, please try again')
         choose_training(player_name)
         
-def training_strenght(player_name):
+def training_strength(player_name):
     """
     Runs when the users choose strenght in start_game
     """
@@ -112,13 +111,22 @@ def choose_position_two(player_name):
     
 
 def goalkeeper(player_name):
+    """
+    Runs when the users choose goalkeeper in choose_position_one
+    """
     print('Being a goalkeeper is a vulnerable position, noticeable immediately when making a mistake')
     print('The competition is also higher since only one goalkeeper is needed on the field')
     print(f"However, all the effort pays off when, after just two seasons, {player_name} gets recruited by:")
     drafted_one()
 
 def defender(player_name):
-    print('defender')
+    """
+    Runs when the users choose defender in choose_position_one
+    """
+    print('Being a defender is a demanding and physical position!')
+    print(f"{player_name} fights and works hard every match and training session to improve and learn from mistakes")
+    print(f"After two seasons with GIF Sundsvall, all the hard work pays off, and {player_name} gets recruited by:")
+    drafted_two()
 
 def striker(player_name):
     print('striker')
@@ -127,6 +135,9 @@ def midfielder(player_name):
     print('midfielder') 
 
 def drafted_one():
+    """
+    Runs the options from the function goalkeeper
+    """
     drafted_one = input ('1. Halmstad BK \n2. Örebro \n')
     if drafted_one == '1':
         team_halmstad()
@@ -136,6 +147,21 @@ def drafted_one():
         print('wrong character, please try again')
         drafted_one()
 
+def drafted_two():
+    """
+    Runs the options from the function defender
+    """
+    drafted_two = input('1. Malmö FF \n2. Elfsborg \n')
+    if drafted_two == '1':
+        team_malmo()
+    elif drafted_two == '2':
+        team_elfsborg()
+    else:
+        print('wrong character, please try again')
+        drafted_two()
+
+
+
 
 
 def team_halmstad():
@@ -143,6 +169,12 @@ def team_halmstad():
 
 def team_orebro():
     print('örebro')
+
+def team_malmo():
+    print('malmö')
+
+def team_elfsborg():
+    print('elfsborg')
 
 def main():
     """
