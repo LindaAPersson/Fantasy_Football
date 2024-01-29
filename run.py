@@ -236,9 +236,10 @@ def team_elfsborg(player_name):
     print(f"After surgery and rehab, it's clear that {player_name} won't be able to come back as an elite player.")
     print(f"{player_name} decides to pursue a career as:")
 
-
 def team_sirius(player_name):
-    print('sirius')
+    print(f"{player_name} absolutely loves playing for Sirius! The team feels like home immediately, and {player_name} gains significant trust.")
+    print(f"In the second season, {player_name} wins the top scorer title and is offered a contract with:")
+
 
 def team_goteborg(player_name):
     print('göteborg')
@@ -288,18 +289,32 @@ def next_step_three(player_name):
         print('wrong character, please try again')
         next_step_three(player_name)
 
-def next_step_four():
+def next_step_four(player_name):
     """
     Runs the options from the function team_elfsborg
     """
     next_step_four_options = input('1. Coach \n2. Coach for minors \n')
     if next_step_four_options = '1':
-        coach()
+        coach(player_name)
     elif next_step_four_options = '2':
-        junior_coach()
+        junior_coach(player_name)
     else:
         print('wrong character, please try again')
-        next_step_four()
+        next_step_four(player_name)
+
+def next_step_five(player_name):
+    """
+    Runs the options from the function team_sirus
+    """
+    next_step_five_options = input('1. Roma \n2. Inter \n')
+    if next_step_five_options = '1':
+        team_roma(player_name)
+    elif next_step_five_options = '2':
+        team_inter(player_name)
+    else
+        print('wrong character, please try again')
+        next_step_five(player_name)
+
 
 def youth_coach(player_name):
     print('juniortränare')
@@ -324,6 +339,12 @@ def coach():
 
 def junior_coach():
     print('juniorcoach')
+
+def team_roma():
+    print('roma')
+
+def team_inter():
+    print('inter')
 
 
 def main():
