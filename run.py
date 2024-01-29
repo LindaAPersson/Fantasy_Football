@@ -146,84 +146,106 @@ def midfielder(player_name):
     print(f"{player_name} goes to:")
     drafted_four()
 
-def drafted_one():
+def drafted_one(player_name):
     """
     Runs the options from the function goalkeeper
     """
     drafted_one_options = input ('1. Halmstad BK \n2. Örebro \n')
     if drafted_one_options == '1':
-        team_halmstad()
+        team_halmstad(player_name)
     elif drafted_one_options == '2':
-        team_orebro()
+        team_orebro(player_name)
     else:
         print('wrong character, please try again')
-        drafted_one()
+        drafted_one(player_name)
 
-def drafted_two():
+def drafted_two(player_name):
     """
     Runs the options from the function defender
     """
     drafted_two_options = input('1. Malmö FF \n2. Elfsborg \n')
     if drafted_two_options == '1':
-        team_malmo()
+        team_malmo(player_name)
     elif drafted_two_options == '2':
-        team_elfsborg()
+        team_elfsborg(player_name)
     else:
         print('wrong character, please try again')
-        drafted_two()
+        drafted_two(player_name)
 
-def drafted_three():
+def drafted_three(player_name):
     """
     Runs the options from the function striker
     """
     drafted_three_options = input('1. IK Sirius \n2. IFK Göteborg \n')
     if drafted_three_options == '1':
-        team_sirius()
+        team_sirius(player_name)
     elif drafted_three_options == '2':
-        team_goteborg()
+        team_goteborg(player_name)
     else:
         print('wrong character, please try again')
-        drafted_three()
+        drafted_three(player_name)
 
-def drafted_four():
+def drafted_four(player_name):
     """
     Runs the options from the function midfielder
     """
     drafted_four_options = input('1. AIK \n2. Djurgården IF \n')
     if drafted_four_options == '1':
-        team_aik()
+        team_aik(player_name)
     elif drafted_four_options == '2':
-        team_djurgarden()
+        team_djurgarden(player_name)
     else:
         print('wrong character, please try again')
-        drafted_four()
+        drafted_four(player_name)
+
+def team_halmstad(player_name):
+    print(f"Halmstad is a stable mid-table team in need of a goalkeeper, and {player_name} quickly makes a name for themselves in both the club and the city.")
+    print(f"The matches go on, {player_name} performs well, and the team does okay but never rises above mid-table.")
+    print(f"{player_name} stays for five seasons before a knee injury ends their playing career.")
+    print(f"{player_name} decides to become:")
+    next_step_one()
 
 
-
-
-def team_halmstad():
-    print('halmstad')
-
-def team_orebro():
+def team_orebro(player_name):
     print('örebro')
 
-def team_malmo():
+def team_malmo(player_name):
     print('malmö')
 
-def team_elfsborg():
+def team_elfsborg(player_name):
     print('elfsborg')
 
-def team_sirius():
+def team_sirius(player_name):
     print('sirius')
 
-def team_goteborg():
+def team_goteborg(player_name):
     print('göteborg')
 
-def team_aik():
+def team_aik(player_name):
     print('aik')
 
-def team_djurgarden():
+def team_djurgarden(player_name):
     print('Djurgården')
+
+def next_step_one():
+    next_step_one_options = input('1. Coach for u-21 \n2. Goalkeeper coach \n')
+    if next_step_one_options = '1':
+        youth_coach()
+    elif next_step_one_options = '2':
+        goalkeeper_coach()
+    else: 
+        print('wrong character, please try again')
+        next_step_one()
+
+
+
+def youth_coach():
+    print('juniortränare')
+
+def goalkeeper_coach():
+    print('goal coach')
+
+
 
 
 def main():
