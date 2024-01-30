@@ -52,6 +52,12 @@ def choose_name():
     player_name = input(
         'What´s your name fotballplayer? \n'
     )
+    while not player_name .isalpha():
+        print('Input must contain only alphabetic')
+        player_name = input(
+            'What´s your name fotballplayer? \n'
+        )
+
     start_game(player_name)
     return player_name
 
