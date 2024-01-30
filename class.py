@@ -1,0 +1,1 @@
+class wrong_character:
