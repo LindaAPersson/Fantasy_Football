@@ -389,24 +389,28 @@ def youth_coach(player_name):
     print(f"{player_name} starts their coaching career with hometown club GIF Sundsvall but quickly advances")
     print(f"After five seasons, {player_name} receives an offer to become the national team coach for the U-21 national team.")
     print(f"{player_name} accepts and manages to win the U-21 European Championship.")
+    end_game()
 
 def goalkeeper_coach(player_name):
     """
     Runs when user choose Goalkeeper coach in next_step_one
     """
     print('goal coach')
+    end_game()
 
 def team_milan(player_name):
     """
     Runs when user choose Milan in next_step_two
     """
     print('milan')
+    end_game()
 
 def team_fullham(player_name):
     """
     Runs when user choose Fullham in next_step_three
     """
     print('fulllham')
+    end_game()
 
 def team_leeds(player_name):
     """
@@ -414,6 +418,7 @@ def team_leeds(player_name):
     """
     print(f"{player_name} initially struggles in the English league, but after two seasons, physicality and playing time increase.")
     print(f"{player_name} performs well and stays with the club for a remarkable nine seasons.")
+    end_game()
 
 def team_copenhagen(player_name):
     """
@@ -422,18 +427,21 @@ def team_copenhagen(player_name):
     print(f"Things go well for {player_name} in FC Copenhagen, and after two seasons, the team plays in the Champions League.")
     print("Even though the Danish league doesn't have the same standard, it becomes a good advertising window.")
     print(f"After these matches, more top clubs show interest in {player_name}.")
+    end_game()
 
 def coach(player_name):
     """
     Runs when user choose coach in next_step_four
     """
     print('coach')
+    end_game()
 
 def junior_coach(player_name):
     """
     Runs when user choose Coach for minors in next_step_four
     """
     print('juniorcoach')
+    end_game()
 
 def team_roma(player_name):
     """
@@ -446,6 +454,7 @@ def team_inter(player_name):
     Runs when user choose Inter in next_step_five
     """
     print('inter')
+    end_game()
 
 def team_westham(player_name):
     """
@@ -454,6 +463,7 @@ def team_westham(player_name):
     print(f"{player_name} falls out of favor with supporters after a heavy derby loss.")
     print(f"The conflict escalates to the point where {player_name} is benched.")
     print(f"{player_name} is forced to change teams after just one year, returning to IFK Göteborg.")
+    end_game()
 
 def team_manchester(player_name):
     """
@@ -461,14 +471,16 @@ def team_manchester(player_name):
     """
     print(f"{player_name} has to fight their way into the team but gains more and more trust, playing in more critical matches.")
     print(f"{player_name} plays four seasons with Manchester United, and one of those seasons results in winning the Champions League!")
+    end_game()
 
 def team_ajax(player_name):
     """
     Runs when user choose ajax in next_step_seven
     """
-    print(f"{player_name}gains significant trust from the coach immediately.")
+    print(f"{player_name} gains significant trust from the coach immediately.")
     print(f"{player_name} plays well, adapts to the pace and playing style right away.")
     print(f"When the coach gets a new contract with Liverpool FC, he takes {player_name} with him!")
+    end_game()
 
 def team_lissabon(player_name):
     """
@@ -476,19 +488,24 @@ def team_lissabon(player_name):
     """
     print(f"{player_name} makes a very good first impression, and both the coach and supporters see {player_name} as the team's star player after the first season")
     print("Sporting Lisbon even wins the Europa League one year.")
+    end_game()
 
 def team_newcastle(player_name):
     """
     Runs when user choose newcastle in next_step_eight
     """
     print('newcaste')
+    end_game()
 
 def team_stoke(player_name):
     """
     Runs when user choose stoke in next_step_eight
     """
     print('stoke')
+    end_game()
 
+def end_game():
+    print('Thanks for playing! XXXX PLAY AGAIN?')
 
 def main():
     """
