@@ -510,6 +510,16 @@ def team_stoke(player_name):
 
 def end_game():
     print('Thanks for playing! XXXX PLAY AGAIN?')
+    play_again = input('Do you want to play again? y/n\n')
+    if play_again == 'y':
+        choose_game_rules()
+    elif play_again == 'n':
+        print('To bad, bye until next time')
+        game_intro ()
+    else:
+        print('wrong character, please try again')
+        game_intro ()
+ 
 
 def main():
     """
