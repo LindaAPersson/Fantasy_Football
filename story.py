@@ -1,4 +1,10 @@
 # the text in the game
+#import section 
+from termcolor import colored
+
+def rules():
+    print('WRITE THE RULES')
+
 
 def training_strength_story(player_name):
     """
