@@ -1,11 +1,12 @@
-import termcolor
+from termcolor import colored
 
 
 def game_intro():
     """
     Run games intro
     """
-    print('"green"Welcomme Welcome to Fantasy Football!') 
+    
+    print(colored(('Welcomme Welcome to Fantasy Football!'), 'green')) 
     print('Do you have what it takes to make it all the way to the Premier League?')
     print('If you make the right decisions, anything is possible!')
     choose_game_rules()
