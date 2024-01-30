@@ -1,3 +1,6 @@
+"""
+import section
+"""
 from termcolor import colored
 
 
@@ -5,11 +8,12 @@ def game_intro():
     """
     Run games intro
     """
-    
     print(colored(('Welcomme Welcome to Fantasy Football!'), 'green')) 
     print('Do you have what it takes to make it all the way to the Premier League?')
     print('If you make the right decisions, anything is possible!')
+
     choose_game_rules()
+
 
 def choose_game_rules():
     """
@@ -18,13 +22,14 @@ def choose_game_rules():
     chose_game_rules = input(
         'But first, do you want to read the rules/ how to play the game? y/n \n'
     )
-    if chose_game_rules == 'y':
+    if chose_game_rules.lower() == 'y':
         game_rules()
-    elif chose_game_rules == 'n':
+    elif chose_game_rules.lower() == 'n':
         choose_name()
     else:
         print('wrong character, please try again')
         choose_game_rules()
+
 
 def game_rules():
     """
@@ -32,14 +37,15 @@ def game_rules():
     """
     print('Write the rules XXXX and  \n')
     reday_to_start = input('are you reday to start the game? y/n \n')
-    if reday_to_start == 'y':
+    if reday_to_start.lower() == 'y':
         choose_name()
-    elif reday_to_start == 'n':
+    elif reday_to_start.lower() == 'n':
         print('To bad, maybe next time')
         game_intro ()
     else:
         print('wrong character, please try again')
         game_rules()
+
 
 def choose_name():
     print("Let´s begin!")
@@ -48,6 +54,7 @@ def choose_name():
     )
     start_game(player_name)
     return player_name
+
 
 def start_game(player_name):
     """
@@ -399,21 +406,21 @@ def goalkeeper_coach(player_name):
     """
     Runs when user choose Goalkeeper coach in next_step_one
     """
-    print('goal coach')
+    print('Text about goalkeeper coach')
     end_game()
 
 def team_milan(player_name):
     """
     Runs when user choose Milan in next_step_two
     """
-    print('milan')
+    print('Text about milan')
     end_game()
 
 def team_fullham(player_name):
     """
     Runs when user choose Fullham in next_step_three
     """
-    print('fulllham')
+    print('Text about fulllham')
     end_game()
 
 def team_leeds(player_name):
@@ -437,27 +444,28 @@ def coach(player_name):
     """
     Runs when user choose coach in next_step_four
     """
-    print('coach')
+    print('Text about coach')
     end_game()
 
 def junior_coach(player_name):
     """
     Runs when user choose Coach for minors in next_step_four
     """
-    print('juniorcoach')
+    print('Text about coach - junior')
     end_game()
 
 def team_roma(player_name):
     """
     Runs when user choose Roma in next_step_five
     """
-    print('roma')
+    print('Text about roma')
+    end_game()
 
 def team_inter(player_name):
     """
     Runs when user choose Inter in next_step_five
     """
-    print('inter')
+    print('Text about inter')
     end_game()
 
 def team_westham(player_name):
@@ -498,27 +506,27 @@ def team_newcastle(player_name):
     """
     Runs when user choose newcastle in next_step_eight
     """
-    print('newcaste')
+    print('Text about newcaste')
     end_game()
 
 def team_stoke(player_name):
     """
     Runs when user choose stoke in next_step_eight
     """
-    print('stoke')
+    print('Text about stoke')
     end_game()
 
 def end_game():
     print('Thanks for playing! XXXX PLAY AGAIN?')
     play_again = input('Do you want to play again? y/n\n')
-    if play_again == 'y':
+    if play_again.lower() == 'y':
         choose_game_rules()
-    elif play_again == 'n':
+    elif play_again.lower() == 'n':
         print('To bad, bye until next time')
-        game_intro ()
+        game_intro()
     else:
         print('wrong character, please try again')
-        game_intro ()
+        end_game()
  
 
 def main():
