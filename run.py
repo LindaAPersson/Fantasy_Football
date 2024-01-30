@@ -21,15 +21,15 @@ def choose_game_rules():
     """
     Explainns the rules/ how to play the game
     """
-    chose_game_rules = input(
-        'But first, do you want to read the rules/ how to play the game? y/n \n'
-    )
+    chose_game_rules = input(colored(
+        'But first, do you want to read the rules/ how to play the game? y/n \n', 'blue'
+    ))
     if chose_game_rules.lower() == 'y':
         game_rules()
     elif chose_game_rules.lower() == 'n':
         choose_name()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         choose_game_rules()
 
 
@@ -37,7 +37,7 @@ def game_rules():
     """
     The rules of the game/how to play
     """
-    print('Write the rules XXXX and  \n')
+    story.rules()
     reday_to_start = input('are you reday to start the game? y/n \n')
     if reday_to_start.lower() == 'y':
         choose_name()
@@ -45,7 +45,7 @@ def game_rules():
         print('To bad, maybe next time')
         game_intro ()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         game_rules()
 
 
@@ -86,7 +86,7 @@ def choose_training():
     elif choose_training_option == '2':
         training_endurance()
     else:
-        print('Wrong choice, please try again')
+        print(colored('wrong character, please try again', 'red'))
         choose_training()
         
 def training_strength():
@@ -113,7 +113,7 @@ def choose_position_one():
     elif  choose_position_one_options == '2':
         defender()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         choose_position_one()
 
 def choose_position_two():
@@ -126,7 +126,7 @@ def choose_position_two():
     elif choose_position_two_options == '2':
         midfielder()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         choose_position_two()
 
 def goalkeeper():
@@ -167,7 +167,7 @@ def drafted_one():
     elif drafted_one_options == '2':
         team_orebro()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         drafted_one()
 
 def drafted_two():
@@ -180,7 +180,7 @@ def drafted_two():
     elif drafted_two_options == '2':
         team_elfsborg()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         drafted_two()
 
 def drafted_three():
@@ -193,7 +193,7 @@ def drafted_three():
     elif drafted_three_options == '2':
         team_goteborg()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         drafted_three()
 
 def drafted_four():
@@ -206,7 +206,7 @@ def drafted_four():
     elif drafted_four_options == '2':
         team_djurgarden()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         drafted_four()
 
 def team_halmstad():
@@ -275,7 +275,7 @@ def next_step_one():
     elif next_step_one_options == '2':
         goalkeeper_coach()
     else: 
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_one()
 
 def next_step_two():
@@ -288,7 +288,7 @@ def next_step_two():
     elif next_step_two_options == '2':
         team_fullham()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_two()
 
 def next_step_three():
@@ -301,7 +301,7 @@ def next_step_three():
     elif next_step_three_options == '2':
         team_copenhagen()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_three()
 
 def next_step_four():
@@ -314,7 +314,7 @@ def next_step_four():
     elif next_step_four_options == '2':
         junior_coach()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_four()
 
 def next_step_five():
@@ -327,7 +327,7 @@ def next_step_five():
     elif next_step_five_options == '2':
         team_inter()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_five()
 
 def next_step_six():
@@ -340,7 +340,7 @@ def next_step_six():
     elif next_step_six_options == '2':
         team_manchester()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_six()
 
 def next_step_seven():
@@ -353,7 +353,7 @@ def next_step_seven():
     elif next_step_seven_options == '2':
         team_lissabon()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_seven()
 
 def next_step_eight():
@@ -366,7 +366,7 @@ def next_step_eight():
     elif next_step_eight_options == '2':
         team_stoke()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         next_step_eight()
 
 def youth_coach():
@@ -482,7 +482,7 @@ def team_stoke():
     end_game()
 
 def end_game():
-    print('Thanks for playing! XXXX PLAY AGAIN?')
+    print('Thanks for playing!')
     play_again = input('Do you want to play again? y/n\n')
     if play_again.lower() == 'y':
         choose_game_rules()
@@ -490,7 +490,7 @@ def end_game():
         print('To bad, bye until next time')
         game_intro()
     else:
-        print('wrong character, please try again')
+        print(colored('wrong character, please try again', 'red'))
         end_game()
  
 
