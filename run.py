@@ -2,6 +2,7 @@
 import section
 """
 from termcolor import colored
+import story
 
 player_name = ''
 
@@ -12,7 +13,7 @@ def game_intro():
     print(colored(('Welcomme Welcome to Fantasy Football!'), 'green')) 
     print('Do you have what it takes to make it all the way to the Premier League?')
     print('If you make the right decisions, anything is possible!')
-
+    
     choose_game_rules()
 
 
@@ -49,6 +50,9 @@ def game_rules():
 
 
 def choose_name():
+    """
+    Lets the user choose a name for the player
+    """
     print("Let´s begin!")
     global player_name
     choose_player_name = input(
@@ -89,10 +93,7 @@ def training_strength():
     """
     Runs when the users choose strenght in start_game
     """
-    player_name
-    print(f"All forms of training are essential, but {player_name} has a special passion to build muscles")
-    print("Seeing oneself become stronger and stronger is very satisfying")
-    print(f"Also, {player_name} needs the strength on the football field, as {player_name} plays as:")
+    story.training_strength_story(player_name)
     choose_position_one()
 
 def training_endurance():
@@ -573,11 +574,12 @@ def main():
     starts the first function
     """
     game_intro()
+    start_game()
     """choose_game_rules()
     game_rules()
     choose_name()
     player_name = choose_name()
-    start_game(player_name)
+    
     choose_training()
     training_strenght(player_name)
     training_endurance(player_name)

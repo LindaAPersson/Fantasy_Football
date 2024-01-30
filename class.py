@@ -1,1 +1,0 @@
-class wrong_character:
