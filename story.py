@@ -5,12 +5,12 @@ import effect
 
 def rules():
     effect.slow(
-        "How do you play?"
-        'All instructions are in the game.'
-        'For yes and no questions, just respond with y or n and press enter.'
-        'When entering your name, you can write whatever you want, but it should only consist of letters.'
+        "\nHow to you play!\n" 
+        'All instructions are in the game.\n'
+        'For yes and no questions, just respond with y or n and press enter.\n'
+        'When entering your name, you can write whatever you want, but it should only consist of letters.\n'
         'When choosing your career path, just respond with 1 or 2, and press enter\n'
-        'Have fun and good luck!'
+        'Have fun and good luck!\n'
     )
 
 def training_strength_story(player_name):
