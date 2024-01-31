@@ -10,6 +10,7 @@ def game_intro():
     """
     Run games intro
     """
+    #Art from ASCII - read more in README.md
     print(r"""
      o__        o__     |   |\
     /|          /\      |   |X\
@@ -34,7 +35,7 @@ def choose_game_rules():
     elif chose_game_rules.lower() == 'n':
         choose_name()
     else:
-        cprint('wrong character, please try again', 'red'))
+        cprint('wrong character, please try again', 'red')
         choose_game_rules()
 
 
