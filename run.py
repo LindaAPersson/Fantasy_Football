@@ -7,20 +7,24 @@ import effect
 
 player_name = ''
 
+
 def game_intro():
     """
     Run games intro
     """
-    #Art from ASCII - read more in README.md
+    # Art from ASCII - read more in README.md
     print(r"""
      o__        o__     |   |\
     /|          /\      |   |X\
     / > o        <\     |   |XX\
     """)
-    print(colored('\nWelcomme Welcome to Fantasy Football!\n', 'white', 'on_green', attrs=['bold'])) 
-    print(colored('Do you have what it takes to make it all the way to the Premier League?', 'white', 'on_green'))
-    print(colored('If you make the right decisions, anything is possible!\n', 'white', 'on_green'))
-    
+    print(colored("\nWelcomme Welcome to Fantasy "
+                  "Football!\n", 'white', 'on_green', attrs=['bold']))
+    print(colored("Do you have what it takes to make it all "
+                  "the way to the Premier League?", 'white', 'on_green'))
+    print(colored("If you make the right decisions, anything is "
+                  "possible!\n", 'white', 'on_green'))
+
     choose_game_rules()
 
 
@@ -29,7 +33,8 @@ def choose_game_rules():
     Explainns the rules/ how to play the game
     """
     chose_game_rules = input(colored(
-        'But first, do you want to read the rules/ how to play the game? y/n\n', 'blue'
+        "But first, do you want to read the rules/ how to "
+        "play the game? y/n\n", 'blue'
     ))
     if chose_game_rules.lower() == 'y':
         game_rules()
@@ -45,12 +50,13 @@ def game_rules():
     The rules of the game/how to play
     """
     story.rules()
-    reday_to_start = input(colored('Are you reday to start the game? y/n\n', 'green'))
+    reday_to_start = input(colored("Are you reday to start the "
+                                   "game? y/n\n", 'green'))
     if reday_to_start.lower() == 'y':
         choose_name()
     elif reday_to_start.lower() == 'n':
         cprint('To bad, maybe next time', 'red')
-        game_intro ()
+        game_intro()
     else:
         cprint('wrong character, please try again', 'red')
         game_rules()
@@ -68,7 +74,7 @@ def choose_name():
     while not choose_player_name.isalpha():
         cprint('Input must contain only alphabetic', 'red')
         choose_player_name = input(colored(
-        'What´s your name fotballplayer? \n', 'green'
+            "What´s your name fotballplayer? \n", 'green'
         ))
 
     player_name = choose_player_name
@@ -81,12 +87,16 @@ def start_game():
     """
     player_name
     effect.slow(
-    f"\nHello {player_name}, let´s see how long you can go!\n"
-    f"{player_name} is a young and promising football player who loves and lives for the sport.\n"
-    f"Currently, {player_name} is part of a smaller team in Division 1 in Sweden, GIF Sundsvall.\n"
-    f"But {player_name} trains every day to progress further and what {player_name} enjoys training the most is:\n"
+        f"\nHello {player_name}, let´s see how long you can go!\n"
+        f"{player_name} is a young and promising football player who "
+        "loves and lives for the sport.\n"
+        f"Currently, {player_name} is part of a smaller team in "
+        "Division 1 in Sweden, GIF Sundsvall.\n"
+        "But {player_name} trains every day to progress further and "
+        f"what {player_name} enjoys training the most is:\n"
     )
     choose_training()
+
 
 def choose_training():
     cprint('Please choose 1 or 2:\n', 'green')
@@ -99,6 +109,7 @@ def choose_training():
         print(colored('wrong character, please try again', 'red'))
         choose_training()
 
+
 def training_strength():
     """
     Runs when the users choose strenght in start_game
@@ -106,12 +117,14 @@ def training_strength():
     story.training_strength_story(player_name)
     choose_position_one()
 
+
 def training_endurance():
     """
     Runs when the users choose endurance in start_game
     """
     story.training_endurance_story(player_name)
     choose_position_two()
+
 
 def choose_position_one():
     """
@@ -121,18 +134,19 @@ def choose_position_one():
     choose_position_one_options = input('1. Goalkeeper\n2. Defender\n')
     if choose_position_one_options == '1':
         goalkeeper()
-    elif  choose_position_one_options == '2':
+    elif choose_position_one_options == '2':
         defender()
     else:
         print(colored('wrong character, please try again', 'red'))
         choose_position_one()
+
 
 def choose_position_two():
     """
     Runs the options from the function training_endurance
     """
     cprint('Please choose 1 or 2:\n', 'green')
-    choose_position_two_options = input ('1. Striker\n2. Midfielder\n')
+    choose_position_two_options = input('1. Striker\n2. Midfielder\n')
     if choose_position_two_options == '1':
         striker()
     elif choose_position_two_options == '2':
@@ -141,12 +155,14 @@ def choose_position_two():
         print(colored('wrong character, please try again', 'red'))
         choose_position_two()
 
+
 def goalkeeper():
     """
     Runs when the users choose goalkeeper in choose_position_one
     """
     story.goalkeeper_story(player_name)
     drafted_one()
+
 
 def defender():
     """
@@ -155,12 +171,14 @@ def defender():
     story.defender_story(player_name)
     drafted_two()
 
+
 def striker():
     """
     Runs when the users choose striker in choose_position_two
     """
     story.striker_story(player_name)
     drafted_three()
+
 
 def midfielder():
     """
@@ -169,12 +187,13 @@ def midfielder():
     story.midfielder_story(player_name)
     drafted_four()
 
+
 def drafted_one():
     """
     Runs the options from the function goalkeeper
     """
     cprint('Please choose 1 or 2:\n', 'green')
-    drafted_one_options = input ('1. Halmstad BK \n2. Örebro \n')
+    drafted_one_options = input('1. Halmstad BK \n2. Örebro \n')
     if drafted_one_options == '1':
         team_halmstad()
     elif drafted_one_options == '2':
@@ -182,6 +201,7 @@ def drafted_one():
     else:
         print(colored('wrong character, please try again', 'red'))
         drafted_one()
+
 
 def drafted_two():
     """
@@ -197,6 +217,7 @@ def drafted_two():
         print(colored('wrong character, please try again', 'red'))
         drafted_two()
 
+
 def drafted_three():
     """
     Runs the options from the function striker
@@ -210,6 +231,7 @@ def drafted_three():
     else:
         print(colored('wrong character, please try again', 'red'))
         drafted_three()
+
 
 def drafted_four():
     """
@@ -225,12 +247,14 @@ def drafted_four():
         print(colored('wrong character, please try again', 'red'))
         drafted_four()
 
+
 def team_halmstad():
     """
     Runs when the users choose Halmstad in drafted_one
     """
     story.team_halmstad_story(player_name)
     next_step_one()
+
 
 def team_orebro():
     """
@@ -239,12 +263,14 @@ def team_orebro():
     story.team_orebro_story(player_name)
     next_step_two()
 
+
 def team_malmo():
     """
     Runs when the users choose Malmö in drafted_two
     """
     story.team_malmo_story(player_name)
     next_step_three()
+
 
 def team_elfsborg():
     """
@@ -253,12 +279,14 @@ def team_elfsborg():
     story.team_elfsborg_story(player_name)
     next_step_four()
 
+
 def team_sirius():
     """
     Runs when the users choose IK Sirius in drafted_three
     """
     story.team_sirius_story(player_name)
     next_step_five()
+
 
 def team_goteborg():
     """
@@ -267,6 +295,7 @@ def team_goteborg():
     story.team_goteborg_story(player_name)
     next_step_six()
 
+
 def team_aik():
     """
     Runs when the users choose AIK in drafted_four
@@ -274,12 +303,14 @@ def team_aik():
     story.team_aik_story(player_name)
     next_step_seven()
 
+
 def team_djurgarden():
     """
     Runs when the users choose Djurgården IF in drafted_four
     """
     story.team_djurgarden_story(player_name)
     next_step_eight()
+
 
 def next_step_one():
     """
@@ -291,9 +322,10 @@ def next_step_one():
         youth_coach()
     elif next_step_one_options == '2':
         goalkeeper_coach()
-    else: 
+    else:
         print(colored('wrong character, please try again', 'red'))
         next_step_one()
+
 
 def next_step_two():
     """
@@ -309,6 +341,7 @@ def next_step_two():
         print(colored('wrong character, please try again', 'red'))
         next_step_two()
 
+
 def next_step_three():
     """
     Runs the options from the function team_malmo
@@ -322,6 +355,7 @@ def next_step_three():
     else:
         print(colored('wrong character, please try again', 'red'))
         next_step_three()
+
 
 def next_step_four():
     """
@@ -337,6 +371,7 @@ def next_step_four():
         print(colored('wrong character, please try again', 'red'))
         next_step_four()
 
+
 def next_step_five():
     """
     Runs the options from the function team_sirus
@@ -351,12 +386,15 @@ def next_step_five():
         print(colored('wrong character, please try again', 'red'))
         next_step_five()
 
+
 def next_step_six():
     """
     Runs the options from the function team_goteborg
     """
     cprint('Please choose 1 or 2:\n', 'green')
-    next_step_six_options = input('1. Westham United \n2. Manchester United \n')
+    next_step_six_options = input(
+        '1. Westham United \n2. Manchester United \n'
+        )
     if next_step_six_options == '1':
         team_westham()
     elif next_step_six_options == '2':
@@ -364,6 +402,7 @@ def next_step_six():
     else:
         print(colored('wrong character, please try again', 'red'))
         next_step_six()
+
 
 def next_step_seven():
     """
@@ -379,6 +418,7 @@ def next_step_seven():
         print(colored('wrong character, please try again', 'red'))
         next_step_seven()
 
+
 def next_step_eight():
     """
     Runs the options from the function djurgarden
@@ -393,12 +433,14 @@ def next_step_eight():
         print(colored('wrong character, please try again', 'red'))
         next_step_eight()
 
+
 def youth_coach():
     """
     Runs when user choose Coach for u-21 in next_step_one
     """
     story.youth_coach_story(player_name)
     end_game()
+
 
 def goalkeeper_coach():
     """
@@ -407,12 +449,14 @@ def goalkeeper_coach():
     story.goalkeeper_coach_story(player_name)
     end_game()
 
+
 def team_milan():
     """
     Runs when user choose Milan in next_step_two
     """
     story.team_milan_story(player_name)
     end_game()
+
 
 def team_fullham():
     """
@@ -421,12 +465,14 @@ def team_fullham():
     story.team_fullham_story(player_name)
     end_game()
 
+
 def team_leeds():
     """
     Runs when user choose Leeds in next_step_three
     """
     story.team_leeds_story(player_name)
     end_game()
+
 
 def team_copenhagen():
     """
@@ -435,12 +481,14 @@ def team_copenhagen():
     story.team_copenhagen_story(player_name)
     end_game()
 
+
 def coach():
     """
     Runs when user choose coach in next_step_four
     """
     story.coach_story(player_name)
     end_game()
+
 
 def junior_coach():
     """
@@ -449,12 +497,14 @@ def junior_coach():
     story.junior_coach_story(player_name)
     end_game()
 
+
 def team_roma():
     """
     Runs when user choose Roma in next_step_five
     """
     story.team_roma_story(player_name)
     end_game()
+
 
 def team_inter():
     """
@@ -463,12 +513,14 @@ def team_inter():
     story.team_inter_story(player_name)
     end_game()
 
+
 def team_westham():
     """
     Runs when user choose Westham in next_step_six
     """
     story.team_westham_story(player_name)
     end_game()
+
 
 def team_manchester():
     """
@@ -477,12 +529,14 @@ def team_manchester():
     story.team_manchester_story(player_name)
     end_game()
 
+
 def team_ajax():
     """
     Runs when user choose ajax in next_step_seven
     """
     story.team_ajax_story(player_name)
     end_game()
+
 
 def team_lissabon():
     """
@@ -491,6 +545,7 @@ def team_lissabon():
     story.team_lissabon_story(player_name)
     end_game()
 
+
 def team_newcastle():
     """
     Runs when user choose newcastle in next_step_eight
@@ -498,12 +553,14 @@ def team_newcastle():
     story.team_newcastle_story(player_name)
     end_game()
 
+
 def team_stoke():
     """
     Runs when user choose stoke in next_step_eight
     """
     story.team_stoke_story(player_name)
     end_game()
+
 
 def end_game():
     print('Thanks for playing!')
@@ -517,7 +574,7 @@ def end_game():
   | \ .''-._.-''. / |
    \ |     |     | /
     '.'._.-'-._.'.'
-      '-:_____;-' 
+      '-:_____;-'
     """)
     play_again = input('Do you want to play again? y/n\n')
     if play_again.lower() == 'y':
@@ -528,12 +585,13 @@ def end_game():
     else:
         print(colored('wrong character, please try again', 'red'))
         end_game()
- 
+
 
 def main():
     """
     starts the first function
     """
     game_intro()
+
 
 main()
