@@ -2,7 +2,7 @@
 
 ## Testing
 y/n input
-| Function   | Enter: y  | Enter: n | Enter: space, number, enter |
+| Function   | Enter: Y/y  | Enter: N/n | Enter: space, number, enter |
 | :-----------| :----:| :----:|:----:|
 | choose_game_rules | ok | ok | Error message ok |
 | game_rules | ok | ok | error message ok |
@@ -14,7 +14,7 @@ text input
 | choose_name | ok | error message ok |
 
 1/2 input
-| Function   | 1 answer | 2 answer | Enter: space, letter, enter |
+| Function   | Enter: 1 | Enter: 2 | Enter: space, letter, enter |
 | :-----------| :----:| :----:|:----:|
 | choose_training| ok | ok | error message ok |
 | choose_position_one | ok | ok | error message ok |
