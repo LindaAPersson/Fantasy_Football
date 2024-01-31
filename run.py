@@ -16,9 +16,9 @@ def game_intro():
     /|          /\      |   |X\
     / > o        <\     |   |XX\
     """)
-    print(colored('\nWelcomme Welcome to Fantasy Football!\n', 'black', 'on_green', attrs=['bold'])) 
-    print(colored('Do you have what it takes to make it all the way to the Premier League?', 'black', 'on_green'))
-    print(colored('If you make the right decisions, anything is possible!\n', 'black','on_green'))
+    print(colored('\nWelcomme Welcome to Fantasy Football!\n', 'white', 'on_green', attrs=['bold'])) 
+    print(colored('Do you have what it takes to make it all the way to the Premier League?', 'white', 'on_green'))
+    print(colored('If you make the right decisions, anything is possible!\n', 'white', 'on_green'))
     
     choose_game_rules()
 
@@ -44,14 +44,14 @@ def game_rules():
     The rules of the game/how to play
     """
     story.rules()
-    reday_to_start = input('Are you reday to start the game? y/n\n')
+    reday_to_start = input(colored('Are you reday to start the game? y/n\n', 'green'))
     if reday_to_start.lower() == 'y':
         choose_name()
     elif reday_to_start.lower() == 'n':
         cprint('To bad, maybe next time', 'red')
         game_intro ()
     else:
-        print(colored('wrong character, please try again', 'red'))
+        cprint('wrong character, please try again', 'red')
         game_rules()
 
 
@@ -61,14 +61,14 @@ def choose_name():
     """
     print("Let´s begin!")
     global player_name
-    choose_player_name = input(
-        'What´s your name fotballplayer? \n'
-    )
+    choose_player_name = input(colored(
+        'What´s your name fotballplayer? \n', 'green'
+        ))
     while not choose_player_name.isalpha():
-        print('Input must contain only alphabetic')
-        choose_player_name = input(
-            'What´s your name fotballplayer? \n'
-        )
+        cprint('Input must contain only alphabetic', 'red')
+        choose_player_name = input(colored(
+        'What´s your name fotballplayer? \n', 'green'
+        ))
 
     player_name = choose_player_name
     start_game()
@@ -517,21 +517,5 @@ def main():
     starts the first function
     """
     game_intro()
-    start_game()
-    """choose_game_rules()
-    game_rules()
-    choose_name()
-    player_name = choose_name()
-    
-    choose_training()
-    training_strenght(player_name)
-    training_endurance(player_name)
-    choose_position_one()
-    choose_position_two()
-    goalkeeper(player_name)
-    defender(player_name)
-    striker(player_name)
-    midfielder(player_name)
-    drafted_one()"""
 
 main()

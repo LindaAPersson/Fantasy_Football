@@ -1,15 +1,17 @@
 # the text in the game
 #import section 
 from termcolor import colored, cprint
+import effect 
 
 def rules():
-    print('How do you play?')
-    print('All instructions are in the game.')
-    print('For yes and no questions, just respond with y or n and press enter.')
-    print('When entering your name, you can write whatever you want, but it should only consist of letters.')
-    print('When choosing your career path, just respond with 1 or 2, and press enter\n')
-    print('Have fun and good luck!')
-
+    effect.slow(
+        "How do you play?"
+        'All instructions are in the game.'
+        'For yes and no questions, just respond with y or n and press enter.'
+        'When entering your name, you can write whatever you want, but it should only consist of letters.'
+        'When choosing your career path, just respond with 1 or 2, and press enter\n'
+        'Have fun and good luck!'
+    )
 
 def training_strength_story(player_name):
     """
