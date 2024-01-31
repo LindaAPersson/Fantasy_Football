@@ -4,6 +4,9 @@ from termcolor import colored, cprint
 import effect 
 
 def rules():
+    """
+    Prints the rules when the player selects y in choose_game_rules
+    """
     cprint("\nHow to you play!\n", 'blue') 
     cprint('All instructions are in the game.\n', 'blue')
     cprint('For yes and no questions, just respond with y or n and press enter.\n', 'blue')
@@ -25,33 +28,41 @@ def training_endurance_story(player_name):
     """
     Runs the story when the users choose endurance in start_game
     """
-    print(f"All forms of training are important, but {player_name} has a special passion for endurance")
-    print(f"Being able to run both more and longer than opponents makes {player_name} stand out")
-    print(f"especially in the last quarter of a football match! This is crucial as {player_name} plays as:")
+    effect.slow(
+        f"\nAll forms of training are important, but {player_name} has a special passion for endurance.\n"
+        f"Being able to run both more and longer than opponents makes {player_name} stand out.\n"
+        f"Especially in the last quarter of a football match! This is crucial as {player_name} plays as:\n"
+    )
 
 def goalkeeper_story(player_name):
     """
     Runs the story when the users choose goalkeeper in choose_position_one
     """
-    print('Being a goalkeeper is a vulnerable position, noticeable immediately when making a mistake')
-    print('The competition is also higher since only one goalkeeper is needed on the field')
-    print(f"However, all the effort pays off when, after just two seasons, {player_name} gets recruited by:")
+    effect.slow(
+        '\nBeing a goalkeeper is a vulnerable position, noticeable immediately when making a mistake\n'
+        'The competition is also higher since only one goalkeeper is needed on the field\n'
+        f"However, all the effort pays off when, after just two seasons, {player_name} gets recruited by:\n"
+    )
 
 def defender_story(player_name):
     """
     Runs the story when the users choose defender in choose_position_one
     """
-    print('Being a defender is a demanding and physical position!')
-    print(f"{player_name} fights and works hard every match and training session to improve and learn from mistakes")
-    print(f"After two seasons with GIF Sundsvall, all the hard work pays off, and {player_name} gets recruited by:")
+    effect.slow(
+        '\nBeing a defender is a demanding and physical position!\n'
+        f"{player_name} fights and works hard every match and training session to improve and learn from mistakes\n"
+        f"After two seasons with GIF Sundsvall, all the hard work pays off, and {player_name} gets recruited by:\n"
+    )
 
 def striker_story(player_name):
     """
     Runs the story when the users choose striker in choose_position_two
     """
-    print(f"Endurance is crucial for a striker, it involves constant starts and rushes, and {player_name} loves it!")
-    print(f"Thanks to {player_name} diligent training, the first season with GIF Sundsvall goes extremely well!")
-    print('So well that NAME gets recruited by:')
+    effect.slow(
+        f"\nEndurance is crucial for a striker, it involves constant starts and rushes, and {player_name} loves it!\n"
+        f"Thanks to {player_name} diligent training, the first season with GIF Sundsvall goes extremely well!\n"
+        f"So well that {player_name} gets recruited by:\n"
+    )
 
 def midfielder_story(player_name):
     """
