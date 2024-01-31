@@ -4,14 +4,12 @@ from termcolor import colored, cprint
 import effect 
 
 def rules():
-    effect.slow(
-        "\nHow to you play!\n" 
-        'All instructions are in the game.\n'
-        'For yes and no questions, just respond with y or n and press enter.\n'
-        'When entering your name, you can write whatever you want, but it should only consist of letters.\n'
-        'When choosing your career path, just respond with 1 or 2, and press enter\n'
-        'Have fun and good luck!\n'
-    )
+    cprint("\nHow to you play!\n", 'blue') 
+    cprint('All instructions are in the game.\n', 'blue')
+    cprint('For yes and no questions, just respond with y or n and press enter.\n', 'blue')
+    cprint('When entering your name, you can write whatever you want, but it should only consist of letters.\n', 'blue')
+    cprint('When choosing your career path, just respond with 1 or 2, and press enter\n', 'blue')
+    cprint('Have fun and good luck!\n', 'blue')
 
 def training_strength_story(player_name):
     """
