@@ -3,7 +3,12 @@
 from termcolor import colored, cprint
 
 def rules():
-    print('WRITE THE RULES')
+    print('How do you play?')
+    print('All instructions are in the game.')
+    print('For yes and no questions, just respond with y or n and press enter.')
+    print('When entering your name, you can write whatever you want, but it should only consist of letters.')
+    print('When choosing your career path, just respond with 1 or 2, and press enter\n')
+    print('Have fun and good luck!')
 
 
 def training_strength_story(player_name):

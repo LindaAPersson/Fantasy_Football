@@ -44,11 +44,11 @@ def game_rules():
     The rules of the game/how to play
     """
     story.rules()
-    reday_to_start = input(cprint('are you reday to start the game? y/n \n', 'green'))
+    reday_to_start = input('Are you reday to start the game? y/n\n')
     if reday_to_start.lower() == 'y':
         choose_name()
     elif reday_to_start.lower() == 'n':
-        crint('To bad, maybe next time', 'red')
+        cprint('To bad, maybe next time', 'red')
         game_intro ()
     else:
         print(colored('wrong character, please try again', 'red'))
