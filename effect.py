@@ -1,6 +1,7 @@
 import sys
 import time
 
+
 def slow(all_strings):
     """
     Runs all story strings in story.py on slow
