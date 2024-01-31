@@ -10,9 +10,14 @@ def game_intro():
     """
     Run games intro
     """
-    print(colored(('Welcomme Welcome to Fantasy Football!'), 'green')) 
+    print(r"""
+     o__        o__     |   |\
+    /|          /\      |   |X\
+    / > o        <\     |   |XX\
+    """)
+    print(colored('\nWelcomme Welcome to Fantasy Football!\n', 'white', 'on_green', attrs=['bold'])) 
     print('Do you have what it takes to make it all the way to the Premier League?')
-    print('If you make the right decisions, anything is possible!')
+    print('If you make the right decisions, anything is possible!\n')
     
     choose_game_rules()
 
