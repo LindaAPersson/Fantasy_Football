@@ -2,7 +2,7 @@
 
 
 | Function   | y answer | n answer | Other input |
-| -----------| ---------| ---------|-------------|
-| Function 1 |    y     |    n     | erros       |
-| Function 2 |    y     |    n     | erros       |
-
+| :-----------| :----:| :----:|:----:|
+| choose_game_rules | ok | ok | error message ok   |
+| game_rules | ok | ok | error message ok |
+| end_game | 
