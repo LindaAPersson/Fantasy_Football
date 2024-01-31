@@ -15,9 +15,9 @@ def game_intro():
     /|          /\      |   |X\
     / > o        <\     |   |XX\
     """)
-    print(colored('\nWelcomme Welcome to Fantasy Football!\n', 'white', 'on_green', attrs=['bold'])) 
-    print('Do you have what it takes to make it all the way to the Premier League?')
-    print('If you make the right decisions, anything is possible!\n')
+    print(colored('\nWelcomme Welcome to Fantasy Football!\n', 'black', 'on_green', attrs=['bold'])) 
+    print(colored('Do you have what it takes to make it all the way to the Premier League?', 'black', 'on_green'))
+    print(colored('If you make the right decisions, anything is possible!\n', 'black','on_green'))
     
     choose_game_rules()
 
@@ -27,7 +27,7 @@ def choose_game_rules():
     Explainns the rules/ how to play the game
     """
     chose_game_rules = input(colored(
-        'But first, do you want to read the rules/ how to play the game? y/n \n', 'blue'
+        'But first, do you want to read the rules/ how to play the game? y/n\n', 'blue'
     ))
     if chose_game_rules.lower() == 'y':
         game_rules()

@@ -26,7 +26,6 @@ def goalkeeper_story(player_name):
     """
     Runs the story when the users choose goalkeeper in choose_position_one
     """
-    
     print('Being a goalkeeper is a vulnerable position, noticeable immediately when making a mistake')
     print('The competition is also higher since only one goalkeeper is needed on the field')
     print(f"However, all the effort pays off when, after just two seasons, {player_name} gets recruited by:")
@@ -140,19 +139,25 @@ def goalkeeper_coach_story(player_name):
     """
     Runs the story when user choose Goalkeeper coach in next_step_one
     """
-    print('Text about goalkeeper coach')
+    print(f"{player_name} quickly shifts focus from the injury and immediately starts their coaching education.")
+    print(f"The results are clear; just a year later, {player_name} becomes the goalkeeper coach for AIK")
+    print(f"After five seasons there, {player_name} is recruited by Arsenal.")
 
 def team_milan_story(player_name):
     """
     Runs the story when user choose Milan in next_step_two
     """
-    print('Text about milan')
+    print(f"Milan and {player_name} fit like a glove!")
+    print(f"{player_name} plays for Milan for a whole 8 seasons and even wins the top scorer title one year.")
+    print(f"After that, {player_name} goes to Miami to conclude their career.")
 
 def team_fullham_story(player_name):
     """
     Runs the story when user choose Fullham in next_step_three
     """
-    print('Text about fulllham')
+    print(f"{player_name} integrates well into the team and gains a lot of trust from the coach.")
+    print("Everything is heading in the right direction until the unfortunate happens.")
+    print(f"{player_name} tears their achilles tendon during the second season and never returns to their explosive self again.")
 
 def team_leeds_story(player_name):
     """
@@ -173,25 +178,34 @@ def coach_story(player_name):
     """
     Runs the story when user choose coach in next_step_four
     """
-    print('Text about coach')
+    print(f"{player_name} begins their coaching career at IK Sirius, and it starts a bit hesitantly.")
+    print(f"But after some time, {player_name} becomes more comfortable, and the results start to show.")
+    print(f"After 6 seasons with Sirius, {player_name} becomes the national team coach for Sweden.")
 
 def junior_coach_story(player_name):
     """
     Runs the story when user choose Coach for minors in next_step_four
     """
-    print('Text about coach - junior')
+    print(f"{player_name} is asked to help with the Elfsborg's junior team, and {player_name} accepts.")
+    print(f"Initially, {player_name} doesn't quite see the purpose of it,")
+    print(f" but after a while, {player_name} becomes attached to the players and provides valuable input.")
+    print(f"The team participates and wins the Gothia Cup with {player_name} as the head coach.")
 
 def team_roma_story(player_name):
     """
     Runs the story when user choose Roma in next_step_five
     """
-    print('Text about roma')
+    print(f"{player_name} works their way into the new team and enjoys it in Roma.")
+    print(f"so much so that {player_name} stays there until the end of their career.")
+    print(f"Roma and {player_name} achieve much together, but the greatest feat was when they won Serie A.")
 
 def team_inter_story(player_name):
     """
     Runs the story when user choose Inter in next_step_five
     """
-    print('Text about inter')
+    print(f"{player_name} continues to perform and score goals.")
+    print(f"After four years in Inter, {player_name} is recruited by Manchester City,")
+    print(f"and it doesn't take long before {player_name} makes a name for themselves there too!")
 
 def team_westham_story(player_name):
     """
@@ -227,10 +241,13 @@ def team_newcastle_story(player_name):
     """
     Runs the story when user choose newcastle in next_step_eight
     """
-    print('Text about newcaste')
+    print(f"The adjustment to moving to England is challenging for {player_name}; it takes a long time before {player_name} adapts. ")
+    print("This is also noticeable on the football field. The first season with Newcastle is not good.")
+    print(f"However, the coach continues to believe in {player_name}, and after two seasons with the club, the results finally start to come!")
 
 def team_stoke_story(player_name):
     """
     Runs the story when user choose stoke in next_step_eight
     """
-    print('Text about stoke')
+    print(f"There is nothing that can stop {player_name} in their new club.")
+    print(f"Unfortunately, {player_name} doesn't stay long in Stoke as they are recruited by PSG after just two seasons.")
