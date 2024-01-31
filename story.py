@@ -33,10 +33,10 @@ def training_strength_story(player_name):
     """
     effect.slow(
         f"\nAll forms of training are essential, but {player_name} \n"
-        "has a special passion to build muscles\n"
-        "Seeing oneself become stronger and stronger is very satisfying\n"
+        "has a special passion to build muscles.\n"
+        "Seeing oneself become stronger and stronger is very satisfying.\n"
         f"Also, {player_name} needs the strength on the football field, \n"
-        f" as {player_name} plays as:\n"
+        f"as {player_name} plays as:\n"
     )
 
 
@@ -47,10 +47,10 @@ def training_endurance_story(player_name):
     effect.slow(
         f"\nAll forms of training are important, but {player_name} \n"
         "has a special passion for endurance.\n"
-        "Being able to run both more and longer than opponents\n"
+        "Being able to run both more and longer than opponents \n"
         f"makes {player_name} stand out.\n"
         "Especially in the last quarter of a football match!\n"
-        f" This is crucial as {player_name} plays as:\n"
+        f"This is crucial as {player_name} plays as:\n"
     )
 
 
@@ -60,9 +60,9 @@ def goalkeeper_story(player_name):
     """
     effect.slow(
         "\nBeing a goalkeeper is a vulnerable position, \n"
-        "noticeable immediately when making a mistake\n"
+        "noticeable immediately when making a mistake.\n"
         "The competition is also higher since only one \n"
-        "goalkeeper is needed on the field\n"
+        "goalkeeper is needed on the field.\n"
         "However, all the effort pays off when, \n"
         f"after just two seasons, {player_name} gets recruited by:\n"
     )
@@ -75,7 +75,7 @@ def defender_story(player_name):
     effect.slow(
         "\nBeing a defender is a demanding and physical position!\n"
         f"{player_name} fights and works hard every match and \n"
-        "training session to improve and learn from mistakes\n"
+        "training session to improve and learn from mistakes.\n"
         "After two seasons with GIF Sundsvall, all the hard work pays off,\n"
         f" and {player_name} gets recruited by:\n"
     )
@@ -86,7 +86,7 @@ def striker_story(player_name):
     Runs the story when the users choose striker in choose_position_two
     """
     effect.slow(
-        "\nEndurance is crucial for a striker, it involves constant\n"
+        "\nEndurance is crucial for a striker, it involves constant \n"
         f"starts and rushes, and {player_name} loves it!\n"
         f"Thanks to {player_name} diligent training, the first season\n"
         " with GIF Sundsvall goes extremely well!\n"
@@ -115,7 +115,7 @@ def team_halmstad_story(player_name):
     effect.slow(
         "\nHalmstad is a stable mid-table team in need of a goalkeeper, \n"
         f"and {player_name} quickly makes a name for themselves in both\n"
-        " the club and the city.\n"
+        "the club and the city.\n"
         f"The matches go on, {player_name} performs well, \n"
         "and the team does okay but never rises above mid-table.\n"
         f"{player_name} stays for five seasons before a \n"
@@ -179,7 +179,7 @@ def team_sirius_story(player_name):
     Runs the story when the users choose IK Sirius in drafted_three
     """
     effect.slow(
-        f"\n{player_name} absolutely loves playing for Sirius! \n"
+        f"\n{player_name} absolutely loves playing for Sirius!\n"
         f"The team feels like home immediately, and {player_name} \n"
         "gains significant trust.\n"
         f"In the second season, {player_name} wins the top \n"
