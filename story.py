@@ -77,7 +77,7 @@ def defender_story(player_name):
         f"{player_name} fights and works hard every match and \n"
         "training session to improve and learn from mistakes.\n"
         "After two seasons with GIF Sundsvall, all the hard work pays off,\n"
-        f" and {player_name} gets recruited by:\n"
+        f"and {player_name} gets recruited by:\n"
     )
 
 
@@ -89,7 +89,7 @@ def striker_story(player_name):
         "\nEndurance is crucial for a striker, it involves constant \n"
         f"starts and rushes, and {player_name} loves it!\n"
         f"Thanks to {player_name} diligent training, the first season\n"
-        " with GIF Sundsvall goes extremely well!\n"
+        "with GIF Sundsvall goes extremely well!\n"
         f"So well that {player_name} gets recruited by:\n"
     )
 
@@ -100,9 +100,9 @@ def midfielder_story(player_name):
     """
     effect.slow(
         f"\nAs a playmaker, endurance is essential, and luckily {player_name}\n"
-        " loves to run!\n"
+        "loves to run!\n"
         f"{player_name} runs so much that after just one season with\n"
-        " GIF Sundsvall, two major teams express interest in \n"
+        "GIF Sundsvall, two major teams express interest in \n"
         f"recruiting {player_name}.\n"
         f"{player_name} goes to:\n"
     )

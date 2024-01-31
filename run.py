@@ -33,7 +33,7 @@ def choose_game_rules():
     Explainns the rules/ how to play the game
     """
     chose_game_rules = input(colored(
-        "But first, do you want to read the rules/ how to "
+        "But first, do you want to read the instructions on how to "
         "play the game? y/n\n", 'blue'
     ))
     if chose_game_rules.lower() == 'y':
@@ -66,7 +66,7 @@ def choose_name():
     """
     Lets the user choose a name for the player
     """
-    print("\nLet´s begin!\n")
+    print(colored("\nLet´s begin!\n", 'white', 'on_green', attrs=['bold']))
     global player_name
     choose_player_name = input(colored(
         'What´s your fotballplayers name?\n', 'green'
@@ -563,7 +563,10 @@ def team_stoke():
 
 
 def end_game():
-    print('Thanks for playing!')
+    """
+    Ends or starting the game again, depending on what the user wants.
+    """
+    print(colored('Thanks for playing!', 'white', 'on_green', attrs=['bold']))
     print(r"""
           ___
       _.-'___'-._
@@ -580,8 +583,7 @@ def end_game():
     if play_again.lower() == 'y':
         choose_game_rules()
     elif play_again.lower() == 'n':
-        print('To bad, bye until next time')
-        game_intro()
+        cprint('To bad, bye until next time','black', 'on_yellow')
     else:
         print(colored('wrong character, please try again', 'red'))
         end_game()
