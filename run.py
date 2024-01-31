@@ -88,12 +88,12 @@ def start_game():
     player_name
     effect.slow(
         f"\nHello {player_name}, let´s see how long you can go!\n"
-        f"{player_name} is a young and promising football player who "
-        "loves and lives for the sport.\n"
-        f"Currently, {player_name} is part of a smaller team in "
+        f"{player_name} is a young and promising football player \n "
+        "who loves and lives for the sport.\n"
+        f"Currently, {player_name} is part of a smaller team in \n"
         "Division 1 in Sweden, GIF Sundsvall.\n"
-        "But {player_name} trains every day to progress further and "
-        f"what {player_name} enjoys training the most is:\n"
+        f"But {player_name} trains every day to progress further \n"
+        f"and what {player_name} enjoys training the most is:\n"
     )
     choose_training()
 
