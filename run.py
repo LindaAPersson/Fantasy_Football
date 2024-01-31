@@ -3,6 +3,7 @@ import section
 """
 from termcolor import colored, cprint
 import story
+import effect
 
 player_name = ''
 
@@ -59,10 +60,10 @@ def choose_name():
     """
     Lets the user choose a name for the player
     """
-    print("Let´s begin!")
+    print("\nLet´s begin!\n")
     global player_name
     choose_player_name = input(colored(
-        'What´s your name fotballplayer? \n', 'green'
+        'What´s your fotballplayers name?\n', 'green'
         ))
     while not choose_player_name.isalpha():
         cprint('Input must contain only alphabetic', 'red')
@@ -79,14 +80,17 @@ def start_game():
     Starts the game
     """
     player_name
-    print(f"Hello {player_name}, let´s see how long you can go!\n")
-    print(f"{player_name} is a young and promising football player who loves and lives for the sport.")
-    print(f"Currently, {player_name} is part of a smaller team in Division 1 in Sweden, GIF Sundsvall.")
-    print(f"But {player_name} trains every day to progress further and what {player_name} enjoys training the most is")
+    effect.slow(
+    f"\nHello {player_name}, let´s see how long you can go!\n"
+    f"{player_name} is a young and promising football player who loves and lives for the sport.\n"
+    f"Currently, {player_name} is part of a smaller team in Division 1 in Sweden, GIF Sundsvall.\n"
+    f"But {player_name} trains every day to progress further and what {player_name} enjoys training the most is:\n"
+    )
     choose_training()
 
 def choose_training():
-    choose_training_option = input('choose 1 or 2:\n1. Strength \n2. Endurance \n')
+    cprint('Please choose 1 or 2:\n', 'green')
+    choose_training_option = input('1. Strength \n2. Endurance \n')
     if choose_training_option == '1':
         training_strength()
     elif choose_training_option == '2':
@@ -94,7 +98,7 @@ def choose_training():
     else:
         print(colored('wrong character, please try again', 'red'))
         choose_training()
-        
+
 def training_strength():
     """
     Runs when the users choose strenght in start_game
@@ -113,6 +117,7 @@ def choose_position_one():
     """
     Runs the options from the function training_strenght
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     choose_position_one_options = input('1. Goalkeeper\n2. Defender\n')
     if choose_position_one_options == '1':
         goalkeeper()
@@ -126,6 +131,7 @@ def choose_position_two():
     """
     Runs the options from the function training_endurance
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     choose_position_two_options = input ('1. Striker\n2. Midfielder\n')
     if choose_position_two_options == '1':
         striker()
@@ -167,6 +173,7 @@ def drafted_one():
     """
     Runs the options from the function goalkeeper
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     drafted_one_options = input ('1. Halmstad BK \n2. Örebro \n')
     if drafted_one_options == '1':
         team_halmstad()
@@ -180,6 +187,7 @@ def drafted_two():
     """
     Runs the options from the function defender
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     drafted_two_options = input('1. Malmö FF \n2. Elfsborg \n')
     if drafted_two_options == '1':
         team_malmo()
@@ -193,6 +201,7 @@ def drafted_three():
     """
     Runs the options from the function striker
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     drafted_three_options = input('1. IK Sirius \n2. IFK Göteborg \n')
     if drafted_three_options == '1':
         team_sirius()
@@ -206,6 +215,7 @@ def drafted_four():
     """
     Runs the options from the function midfielder
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     drafted_four_options = input('1. AIK \n2. Djurgården IF \n')
     if drafted_four_options == '1':
         team_aik()
@@ -275,6 +285,7 @@ def next_step_one():
     """
     Runs the options from the function team_halmstad
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_one_options = input('1. Coach for u-21 \n2. Goalkeeper coach \n')
     if next_step_one_options == '1':
         youth_coach()
@@ -288,6 +299,7 @@ def next_step_two():
     """
     Runs the options from the function team_orebro
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_two_options = input('1. Milan \n2. Fullham \n')
     if next_step_two_options == '1':
         team_milan()
@@ -301,6 +313,7 @@ def next_step_three():
     """
     Runs the options from the function team_malmo
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_three_options = input('1. Leeds \n2. Copenhagen \n')
     if next_step_three_options == '1':
         team_leeds()
@@ -314,6 +327,7 @@ def next_step_four():
     """
     Runs the options from the function team_elfsborg
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_four_options = input('1. Coach \n2. Coach for minors \n')
     if next_step_four_options == '1':
         coach()
@@ -327,6 +341,7 @@ def next_step_five():
     """
     Runs the options from the function team_sirus
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_five_options = input('1. Roma \n2. Inter \n')
     if next_step_five_options == '1':
         team_roma()
@@ -340,6 +355,7 @@ def next_step_six():
     """
     Runs the options from the function team_goteborg
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_six_options = input('1. Westham United \n2. Manchester United \n')
     if next_step_six_options == '1':
         team_westham()
@@ -353,6 +369,7 @@ def next_step_seven():
     """
     Runs the options from the function AIK
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_seven_options = input('1. Ajax \n2. lissabon \n')
     if next_step_seven_options == '1':
         team_ajax()
@@ -366,6 +383,7 @@ def next_step_eight():
     """
     Runs the options from the function djurgarden
     """
+    cprint('Please choose 1 or 2:\n', 'green')
     next_step_eight_options = input('1. Newcastle United \n2. Stoke \n')
     if next_step_eight_options == '1':
         team_newcastle()
