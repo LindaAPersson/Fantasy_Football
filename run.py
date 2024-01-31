@@ -489,6 +489,18 @@ def team_stoke():
 
 def end_game():
     print('Thanks for playing!')
+    print(r"""
+          ___
+      _.-'___'-._
+    .'--.`   `.--'.
+   /.'   \   /   `.\
+  | /'-._/```\_.-'\ |
+  |/    |     |    \|
+  | \ .''-._.-''. / |
+   \ |     |     | /
+    '.'._.-'-._.'.'
+      '-:_____;-' 
+    """)
     play_again = input('Do you want to play again? y/n\n')
     if play_again.lower() == 'y':
         choose_game_rules()
