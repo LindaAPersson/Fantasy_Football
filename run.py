@@ -18,10 +18,10 @@ def game_intro():
     /|          /\      |   |X\
     / > o        <\     |   |XX\
     """)
-    print(colored("\nWelcomme Welcome to Fantasy "
+    print(colored("\nWelcome, Welcome to Fantasy "
                   "Football!\n", 'white', 'on_green', attrs=['bold']))
     print(colored("Do you have what it takes to make it all "
-                  "the way to the Premier League?", 'white', 'on_green'))
+                  "the way to the top?", 'white', 'on_green'))
     print(colored("If you make the right decisions, anything is "
                   "possible!\n", 'white', 'on_green'))
 
@@ -69,12 +69,12 @@ def choose_name():
     print(colored("\nLet´s begin!\n", 'white', 'on_green', attrs=['bold']))
     global player_name
     choose_player_name = input(colored(
-        'What´s your fotballplayers name?\n', 'green'
+        'Choos a name for your football player!\n', 'green'
         ))
     while not choose_player_name.isalpha():
-        cprint('Input must contain only alphabetic', 'red')
+        cprint('The name must contain only letters', 'red')
         choose_player_name = input(colored(
-            "What´s your name fotballplayer? \n", 'green'
+        'Choos a name for your football player!\n', 'green'
         ))
 
     player_name = choose_player_name
@@ -332,11 +332,11 @@ def next_step_two():
     Runs the options from the function team_orebro
     """
     cprint('Please choose 1 or 2:\n', 'green')
-    next_step_two_options = input('1. Milan \n2. Fullham \n')
+    next_step_two_options = input('1. Milan \n2. Fulham \n')
     if next_step_two_options == '1':
         team_milan()
     elif next_step_two_options == '2':
-        team_fullham()
+        team_fulham()
     else:
         print(colored('wrong character, please try again', 'red'))
         next_step_two()
@@ -458,11 +458,11 @@ def team_milan():
     end_game()
 
 
-def team_fullham():
+def team_fulham():
     """
     Runs when user choose Fullham in next_step_three
     """
-    story.team_fullham_story(player_name)
+    story.team_fulham_story(player_name)
     end_game()
 
 
@@ -583,7 +583,7 @@ def end_game():
     if play_again.lower() == 'y':
         choose_game_rules()
     elif play_again.lower() == 'n':
-        cprint('To bad, bye until next time','black', 'on_yellow')
+        cprint('To bad, bye until next time', 'black', 'on_yellow')
     else:
         print(colored('wrong character, please try again', 'red'))
         end_game()

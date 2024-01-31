@@ -13,15 +13,15 @@ def rules():
     cprint("\nHow to you play!\n", 'blue')
     cprint('All instructions are in the game.\n', 'blue')
     cprint(
-        'For yes and no questions, just respond with' +
+        'For yes and no questions, just respond with ' +
         'y or n and press enter.\n', 'blue'
     )
     cprint(
-        'When entering your name, you can write whatever you want, but it' +
+        'When entering your name, you can write whatever you want, but it ' +
         'should only consist of letters.\n', 'blue'
     )
     cprint(
-        'When choosing your career path, just respond with 1 or 2,' +
+        'When choosing your career path, just respond with 1 or 2, ' +
         'and press enter\n', 'blue'
     )
     cprint('Have fun and good luck!\n', 'blue')
@@ -34,7 +34,7 @@ def training_strength_story(player_name):
     effect.slow(
         f"\nAll forms of training are essential, but {player_name} \n"
         "has a special passion to build muscles.\n"
-        "Seeing oneself become stronger and stronger is very satisfying.\n"
+        "Seeing yourself become stronger and stronger is very satisfying.\n"
         f"Also, {player_name} needs the strength on the football field, \n"
         f"as {player_name} plays as:\n"
     )
@@ -61,9 +61,9 @@ def goalkeeper_story(player_name):
     effect.slow(
         "\nBeing a goalkeeper is a vulnerable position, \n"
         "noticeable immediately when making a mistake.\n"
-        "The competition is also higher since only one \n"
+        "The competition is also higher since only one\n"
         "goalkeeper is needed on the field.\n"
-        "However, all the effort pays off when, \n"
+        "However, all the effort pays off when,\n"
         f"after just two seasons, {player_name} gets recruited by:\n"
     )
 
@@ -99,8 +99,8 @@ def midfielder_story(player_name):
     Runs the story when the users choose midfielder in choose_position_two
     """
     effect.slow(
-        f"\nAs a playmaker, endurance is essential, and luckily {player_name}\n"
-        "loves to run!\n"
+        "\nAs a playmaker, endurance is essential, and luckily\n"
+        f" {player_name} loves to run!\n"
         f"{player_name} runs so much that after just one season with\n"
         "GIF Sundsvall, two major teams express interest in \n"
         f"recruiting {player_name}.\n"
@@ -110,7 +110,7 @@ def midfielder_story(player_name):
 
 def team_halmstad_story(player_name):
     """
-    Runs the stry when the users choose Halmstad in drafted_one
+    Runs the story when the users choose Halmstad in drafted_one
     """
     effect.slow(
         "\nHalmstad is a stable mid-table team in need of a goalkeeper, \n"
@@ -131,7 +131,7 @@ def team_orebro_story(player_name):
     effect.slow(
         f"\nÖrebro has an experienced goalkeeper, so {player_name} \n"
         "doesn't get many minutes on the field.\n"
-        f"{player_name} plays in smaller cups and less critical matches, \n"
+        f"{player_name} plays in smaller cups and less crucial matches, \n"
         "performing well but still not getting a spot in the first team.\n"
         "However, before the derby, the regular goalkeeper falls ill, \n"
         f"giving {player_name} a chance.\n"
@@ -225,12 +225,12 @@ def team_djurgarden_story(player_name):
     """
     effect.slow(
         f"It's challenging for {player_name} to break into a \n"
-        "highly performing Malmö team.\n"
-        f"The team tops the league and has stable midfielders. {player_name} \n"
-        "keeps fighting and continues focusing on endurance.\n"
+        "highly performing Djurgården team.\n"
+        "The team tops the league and has stable midfielders.\n"
+        f"{player_name} keeps fighting and continues focusing on endurance.\n"
         f"After two seasons, playing time increases, and after four seasons,\n"
-        f" {player_name} becomes a seasoned and reliable starter.\n"
-        f"fter six seasons with Malmö, {player_name} is recruited by:\n"
+        f"{player_name} becomes a seasoned and reliable starter.\n"
+        f"After six seasons with Djurgården, {player_name} is recruited by:\n"
     )
 
 
@@ -273,9 +273,9 @@ def team_milan_story(player_name):
     )
 
 
-def team_fullham_story(player_name):
+def team_fulham_story(player_name):
     """
-    Runs the story when user choose Fullham in next_step_three
+    Runs the story when user choose Fulham in next_step_three
     """
     effect.slow(
         f"\n{player_name} integrates well into the team and \n"
@@ -444,4 +444,3 @@ def team_stoke_story(player_name):
         f"Unfortunately, {player_name} doesn't stay long in Stoke \n"
         "as they are recruited by PSG after just two seasons.\n"
     )
-    
