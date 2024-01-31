@@ -1,6 +1,6 @@
 # the text in the game
 #import section 
-from termcolor import colored
+from termcolor import colored, cprint
 
 def rules():
     print('WRITE THE RULES')

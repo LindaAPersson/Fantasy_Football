@@ -1,7 +1,7 @@
 """
 import section
 """
-from termcolor import colored
+from termcolor import colored, cprint
 import story
 
 player_name = ''
@@ -34,7 +34,7 @@ def choose_game_rules():
     elif chose_game_rules.lower() == 'n':
         choose_name()
     else:
-        print(colored('wrong character, please try again', 'red'))
+        cprint('wrong character, please try again', 'red'))
         choose_game_rules()
 
 
@@ -43,11 +43,11 @@ def game_rules():
     The rules of the game/how to play
     """
     story.rules()
-    reday_to_start = input('are you reday to start the game? y/n \n')
+    reday_to_start = input(cprint('are you reday to start the game? y/n \n', 'green'))
     if reday_to_start.lower() == 'y':
         choose_name()
     elif reday_to_start.lower() == 'n':
-        print('To bad, maybe next time')
+        crint('To bad, maybe next time', 'red')
         game_intro ()
     else:
         print(colored('wrong character, please try again', 'red'))
