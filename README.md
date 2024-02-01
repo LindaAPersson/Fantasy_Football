@@ -12,7 +12,20 @@ Once the player has finished reading the instructions and clicked to start the g
 After that, a background story begins to unfold on the screen. When it is complete, the player starts choosing the career path for their football player. This is done by offering the player two different options, and the player chooses the one they think fits best by entering 1 or 2. A short story will be displayed on the screen for each choice.
 When the player has worked through all the options, they are offered the choice to play again or to exit the game.
 
+## User Story:
 
+### First-time user:
+- I am interested in football and want to pass the time with a text-based game.
+- I want to influence the direction the game takes.
+
+### Second-time user:
+- I am interested in football and want to pass the time with a text-based game.
+- I want to see if my player takes a different career path compared to the last time I played.
+
+## Flowchart:
+To design the game, I created a flowchart to get an overview of all the parts I would need to work on. This helped me see where I needed to start the process. However, during the project, I also added some features, such as 'How to play'.
+
+FLOWCHART
 
 
 
