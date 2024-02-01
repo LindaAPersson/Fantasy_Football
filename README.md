@@ -3,7 +3,7 @@
 
 [Fantasy Football](https://fantasyfootball-pp3-b369c54e5451.herokuapp.com/) is a text-based game for those who have a moment to spare and want to immerse themselves in the wonderful world of football.
 
-![Am i responsve](../Fantasy_Football/assets/readme-img/responsiv.png)
+![Am i responsve](../assets/readme-img/responsiv.png)
 
 ## How to play:
 
