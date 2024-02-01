@@ -25,7 +25,7 @@ When the player has worked through all the options, they are offered the choice 
 ## Flowchart:
 To design the game, I created a flowchart to get an overview of all the parts I would need to work on. This helped me see where I needed to start the process. However, during the project, I also added some more features, for example 'How to play'.
 
-![Flowchart](../Fantasy_Football/assets/readme-img/flowchart.png)
+![Flowchart](assets/readme-img/flowchart.png)
 
 ## Site structure:
 The code I have created for the game mainly consists of three Python documents: run.py, story.py, and effect.py. 
@@ -58,33 +58,33 @@ When the game is over, it thanks the player for participating, and another ASCII
 ### Welcome:
 When you arrive at the game, you are greeted by an ASCII image resembling a football field. Along with it is a text designed to invite the user's curiosity and make them want to start playing.
 
-![Welcome text](../Fantasy_Football/assets/readme-img/startpage.png)
+![Welcome text](assets/readme-img/startpage.png)
 
 ### Instructions:
 After the welcome text, the user can choose to read the instructions if they wish.
 If the user wants to read the instructions, they appear in blue.
 
-![Instructions](../Fantasy_Football/assets/readme-img/instructions.png)
+![Instructions](assets/readme-img/instructions.png)
 
 ### Name input:
 To make the game more personal, the user can choose a name for the football player that will last throughout the entire game. A Name can only contain letters; otherwise, an error message is displayed, and the player must choose a new name.
 
-![Name input](../Fantasy_Football/assets/readme-img/name-input.png)
-![Name input wrong](../Fantasy_Football/assets/readme-img/name-input-wrong.png)
+![Name input](assets/readme-img/name-input.png)
+![Name input wrong](assets/readme-img/name-input-wrong.png)
 
 ### Game story:
 Once the player has entered a name, the game's story begins to unfold. It starts with a brief background story, followed by two alternatives on how the player wants to guide their football player. The small stories that appear between the alternatives are written as if they are happening in real-time. I did this to make the game feel more personal, as if what is written is happening only to this specific player. There are a total of 31 small stories in this game that are displayed depending on how the player chooses to navigate through the game. Below are examples of one story from each phase.
 
-![Option1](../Fantasy_Football/assets/readme-img/first-option.png)
-![Option1](../Fantasy_Football/assets/readme-img/second-option.png)
-![Option1](../Fantasy_Football/assets/readme-img/third-option.png)
-![Option1](../Fantasy_Football/assets/readme-img/fourth-option.png)
+![Option1](assets/readme-img/first-option.png)
+![Option1](assets/readme-img/second-option.png)
+![Option1](assets/readme-img/third-option.png)
+![Option1](assets/readme-img/fourth-option.png)
 
 ### End game:
 When the player has gone through all the alternatives, a short concluding story about how it went for the football player follows. After that, there is a 'Thanks for playing' text and an ASCII image of a football. The game also asks the player if they want to play again. If the player wants to, they are taken to the instructions again. If the player wants to exit the game, a 'goodbye' text is displayed on a yellow background.
 
-![End of the game](../Fantasy_Football/assets/readme-img/endgame.png)
-![Exit the game](../Fantasy_Football/assets/readme-img/exit-game.png)
+![End of the game](assets/readme-img/endgame.png)
+![Exit the game](assets/readme-img/exit-game.png)
 
 ## Future implementations:
 ### Code:
@@ -99,9 +99,9 @@ Allow players to choose which team they want to join. This way, the game could b
 ### PEP8 Linter
 Testing the code with PEP8 Linter, on all three sites came back clear.
 
-![PEP8 Linter run.py](../Fantasy_Football/assets/readme-img/pep-run.png)
-![PEP8 Linter story.py](../Fantasy_Football/assets/readme-img/pep-story.png)
-![PEP8 Linter effect.py](../Fantasy_Football/assets/readme-img/pep-effect.png)
+![PEP8 Linter run.py](assets/readme-img/pep-run.png)
+![PEP8 Linter story.py](assets/readme-img/pep-story.png)
+![PEP8 Linter effect.py](assets/readme-img/pep-effect.png)
 
 ### Input testing
 Yes or no input
@@ -197,5 +197,3 @@ The football field at the beginning of the game and the football at the end of t
 
 ### Termcolor:
 The package that allows for changing the text color and background color is downloaded from here: [Termcolor](https://pypi.org/project/termcolor/)
-
-[def]: ../assets/readme-img/responsiv.png
