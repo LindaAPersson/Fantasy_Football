@@ -3,7 +3,7 @@
 
 [Fantasy Football](https://fantasyfootball-pp3-b369c54e5451.herokuapp.com/) is a text-based game for those who have a moment to spare and want to immerse themselves in the wonderful world of football.
 
-![Am i responsve](../assets/readme-img/responsiv.png)
+![Am i responsve](assets/readme-img/responsiv.png)
 
 ## How to play:
 
@@ -197,3 +197,5 @@ The football field at the beginning of the game and the football at the end of t
 
 ### Termcolor:
 The package that allows for changing the text color and background color is downloaded from here: [Termcolor](https://pypi.org/project/termcolor/)
+
+[def]: ../assets/readme-img/responsiv.png
