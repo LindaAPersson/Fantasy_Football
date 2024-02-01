@@ -27,6 +27,21 @@ To design the game, I created a flowchart to get an overview of all the parts I 
 
 FLOWCHART
 
+## Site structure:
+The code I have created for the game mainly consists of three Python documents: run.py, story.py, and effect.py. 
+I have chosen to divide the code into three documents to make it easier to read.
+
+- run.py: Consists of the main functions that make the game run, and the input functions.
+- story.py: Contains the short stories played out when the user progresses through the game.
+- effect.py: Includes the function that makes it appear as if the text is being written in real-time.
+
+### Packages:
+The different packages I have installed are:
+
+- Termcolor: This allows setting different colors for text and its background.
+- Sys: It is part of the Python Standard Library and provides access to some variables used or maintained by the Python interpreter.
+- Time: It is part of the Python Standard Library and provides various time-related functions.
+
 ## Design:
 To add some more life into the game than just plain text, I have chosen to add a bit of color and ASCII art. 
 For the welcome text, I opted for white text on a green background to symbolize how a football field looks.
@@ -78,9 +93,15 @@ ENDGAME
 ### Game Concept:
 Allow players to choose which team they want to join. This way, the game could be extended with the existing built-in stories and the random function.
 
-
 ## Testing
-y/n input
+
+### PEP8 Linter
+Testing the code with PEP8 Linter, on all three sites came back clear.
+
+3 PEP8
+
+### Input testing
+Yes or no input
 | Test/function | Action | Expectation | Result |
 | :-----------| :----:| :----:|:----:|
 | Invalid input - choose_game_rules | Entered: space, number, enter  | app informs user of invalid data & prompts the user to try again | Works as expected |
@@ -90,13 +111,13 @@ y/n input
 | Invalid input - end_game | Entered: space, number, enter  | app informs user of invalid data & prompts the user to try again | Works as expected |
 | Valid input - end_game | Entered: Y,y,N,n | app proceeds to next function | Works as expected |
 
-text input
+Text input
 | Test/function | Action | Expectation | Result |
 | :-----------| :----:| :----:|:----:|
 | Invalid input - choose_name | Entered: space, number, enter  | app informs user of invalid data & prompts the user to try again | Works as expected |
 | Valid input - choose_name| Entered: only letters | app proceeds to next function | Works as expected |
 
-1/2 input
+1 or 2 option
 | Test/function | Action | Expectation | Result |
 | :-----------| :----:| :----:|:----:|
 | Invalid input - choose_training| Entered: space, letter, enter  | app informs user of invalid data & prompts the user to try again | Works as expected |
