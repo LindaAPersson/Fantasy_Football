@@ -23,10 +23,21 @@ When the player has worked through all the options, they are offered the choice 
 - I want to see if my player takes a different career path compared to the last time I played.
 
 ## Flowchart:
-To design the game, I created a flowchart to get an overview of all the parts I would need to work on. This helped me see where I needed to start the process. However, during the project, I also added some features, such as 'How to play'.
+To design the game, I created a flowchart to get an overview of all the parts I would need to work on. This helped me see where I needed to start the process. However, during the project, I also added some more features, for example 'How to play'.
 
 FLOWCHART
 
+## Design:
+To add some more life into the game than just plain text, I have chosen to add a bit of color and ASCII art. 
+For the welcome text, I opted for white text on a green background to symbolize how a football field looks.
+
+The instructions have a blue color to stand out from the rest of the text, making it clear to the user that this text is not part of the game.
+
+In areas where users are expected to contribute information, I added a green text color. I did this to ensure that users easily notice that something different is happening here.
+
+If users input incorrect characters at these inputs, a red error message will appear. This is to prompt users to react immediately when something didn't go as intended.
+
+When the game is over, it thanks the player for participating, and another ASCII art is displayed along with the question of whether the user wants to play again. If the user chooses not to, the game says 'goodbye' on a yellow background. This is to make sure users understand that something significant has occurred.
 
 
 
