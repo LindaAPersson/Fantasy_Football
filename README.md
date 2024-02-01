@@ -1,4 +1,24 @@
-[Deployed site](https://fantasyfootball-pp3-b369c54e5451.herokuapp.com/)
+
+# Fantasy Football
+
+[Fantasy Football](https://fantasyfootball-pp3-b369c54e5451.herokuapp.com/) is a text-based game for those who have a moment to spare and want to immerse themselves in the wonderful world of football.
+
+IMAGE RESPONSIVE
+
+## How to play:
+
+Fantasy Football is a completely text-based game where the user progresses by choosing different options provided by the game. The game begins by welcoming the player and asking if they want to read the instructions for the game. The player can respond with 'y' for yes and 'n' for no.
+Once the player has finished reading the instructions and clicked to start the game, they can choose a name for their football player.
+After that, a background story begins to unfold on the screen. When it is complete, the player starts choosing the career path for their football player. This is done by offering the player two different options, and the player chooses the one they think fits best by entering 1 or 2. A short story will be displayed on the screen for each choice.
+When the player has worked through all the options, they are offered the choice to play again or to exit the game.
+
+
+
+
+
+
+
+
 
 ## Testing
 y/n input

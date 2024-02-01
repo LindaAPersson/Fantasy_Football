@@ -69,7 +69,7 @@ def choose_name():
     print(colored("\nLet´s begin!\n", 'white', 'on_green', attrs=['bold']))
     global player_name
     choose_player_name = input(colored(
-        'Choos a name for your football player!\n', 'green'
+        'Choose a name for your football player!\n', 'green'
         ))
     while not choose_player_name.isalpha():
         cprint('The name must contain only letters', 'red')
