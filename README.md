@@ -151,6 +151,12 @@ Text input
 | Invalid input - next_step_eight| Entered: space, letter, enter  | app informs user of invalid data & prompts the user to try again | Works as expected |
 | Valid input - next_step_eight | Entered: 1 or 2 | app proceeds to next function | Works as expected |
 
+## Bugs:
+There are no bugs in the game right now, as far as I know.
+
+A bug that my mentor found when testing the game was that the user could proceed through "choose_name" without entering anything.
+This was fixed using the .isalpha() function, so now the user must enter at least one letter to proceed in the game.
+
 ## Deployment:
 First, I created a new repository on GitHub using a template provided by Code Institute. I took the following steps:
 
@@ -176,3 +182,15 @@ Then follow these steps:
 9. When the app is deployed, a link will appear at the bottom of the page.
 
 After these steps were taken, the application was deployed at the following link: [Fantasy Football](https://fantasyfootball-pp3-b369c54e5451.herokuapp.com/)
+
+## Credits:
+Firstly, I want to express a big thank you to my mentor who provided me with numerous ideas on what to do for the game. Additionally, she finds all the bugs that I might overlook!
+
+### Code:
+The code for the "slow()" function, which makes the text appear as if it's being written in real-time, is modeled after this [YouTube tutorial](https://www.youtube.com/watch?v=Z1_camyBMDo)
+
+### ASCII Art:
+The football field at the beginning of the game and the football at the end of the game are taken from: [ASCII Art](https://www.asciiart.eu/sports-and-outdoors/soccer)
+
+### Termcolor:
+The package that allows for changing the text color and background color is downloaded from here: [Termcolor](https://pypi.org/project/termcolor/)
