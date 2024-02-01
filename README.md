@@ -151,3 +151,28 @@ Text input
 | Invalid input - next_step_eight| Entered: space, letter, enter  | app informs user of invalid data & prompts the user to try again | Works as expected |
 | Valid input - next_step_eight | Entered: 1 or 2 | app proceeds to next function | Works as expected |
 
+## Deployment:
+First, I created a new repository on GitHub using a template provided by Code Institute. I took the following steps:
+
+1. Log into GitHub.
+2. Locate the right template.
+3. Click on "Use this template" to create a new repository.
+4. Choose a repository name and create the repository.
+5. The development environment used for this project was GitPod.
+
+The project was deployed using Heroku, following these steps:
+
+First, the Code Institute template provides a document called "requirements.txt," and this file needs to contain a list of all libraries the project needs to run. Otherwise, Heroku won't be able to run the project.
+
+Then follow these steps:
+1. Login to Heroku (Create an account if necessary).
+2. Click on "New" in the Heroku dashboard and select "Create new app."
+3. Write a name for the app, choose your region, and click "Create App."
+4. In the settings tab for the new application, create one Config var with the name PORT and a value of 8000.
+5. Add two buildpack scripts: Python and Nodejs (in that order).
+6. In the deployment tab, select GitHub as the deployment method and confirm your choice.
+7. In the "Connect to GitHub" field, search for your repository name and click on the connect button next to the right repository.
+8. Choose between automatic deploys or manual deploys. I chose automatic deploys.
+9. When the app is deployed, a link will appear at the bottom of the page.
+
+After these steps were taken, the application was deployed at the following link: [Fantasy Football](https://fantasyfootball-pp3-b369c54e5451.herokuapp.com/)
