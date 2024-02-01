@@ -167,7 +167,8 @@ First, I created a new repository on GitHub using a template provided by Code In
 2. Locate the right template.
 3. Click on "Use this template" to create a new repository.
 4. Choose a repository name and create the repository.
-5. The development environment used for this project was GitPod.
+
+The development environment used for this project was GitPod.
 
 The project was deployed using Heroku, following these steps:
 
