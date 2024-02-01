@@ -198,3 +198,6 @@ The football field at the beginning of the game and the football at the end of t
 
 ### Termcolor:
 The package that allows for changing the text color and background color is downloaded from here: [Termcolor](https://pypi.org/project/termcolor/)
+
+### Flowchart
+The flowchart was created with [Lucid](https://lucid.app/)
