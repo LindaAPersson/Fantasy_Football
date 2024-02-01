@@ -4,7 +4,7 @@ import time
 
 def slow(all_strings):
     """
-    Runs all story strings in story.py on slow
+    Runs all story strings so it looks like they are printed in real time. 
     """
     for all_letters in all_strings + "\n":
         sys.stdout.write(all_letters)
