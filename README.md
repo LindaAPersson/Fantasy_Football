@@ -39,7 +39,36 @@ If users input incorrect characters at these inputs, a red error message will ap
 
 When the game is over, it thanks the player for participating, and another ASCII art is displayed along with the question of whether the user wants to play again. If the user chooses not to, the game says 'goodbye' on a yellow background. This is to make sure users understand that something significant has occurred.
 
+## Features:
+### Welcome:
+When you arrive at the game, you are greeted by an ASCII image resembling a football field. Along with it is a text designed to invite the user's curiosity and make them want to start playing.
 
+WELCOME
+
+### Instructions:
+After the welcome text, the user can choose to read the instructions if they wish.
+If the user wants to read the instructions, they appear in blue.
+
+INSTRUCTIONS
+
+### Name input:
+To make the game more personal, the user can choose a name for the football player that will last throughout the entire game. A Name can only contain letters; otherwise, an error message is displayed, and the player must choose a new name.
+
+NAME INPUT
+NAME INPUT WRONG
+
+### Game story:
+Once the player has entered a name, the game's story begins to unfold. It starts with a brief background story, followed by two alternatives on how the player wants to guide their football player. The small stories that appear between the alternatives are written as if they are happening in real-time. I did this to make the game feel more personal, as if what is written is happening only to this specific player. There are a total of 31 small stories in this game that are displayed depending on how the player chooses to navigate through the game. Below are examples of one story from each phase.
+
+GAME STORY
+1
+2
+3
+
+### End game:
+When the player has gone through all the alternatives, a short concluding story about how it went for the football player follows. After that, there is a 'Thanks for playing' text and an ASCII image of a football. The game also asks the player if they want to play again. If the player wants to, they are taken to the instructions again. If the player wants to exit the game, a 'goodbye' text is displayed on a yellow background.
+
+ENDGAME
 
 
 
