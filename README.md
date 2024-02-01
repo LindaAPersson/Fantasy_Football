@@ -70,7 +70,13 @@ When the player has gone through all the alternatives, a short concluding story 
 
 ENDGAME
 
+## Future implementations:
+### Code:
+- Refactor the code so that it does not need to be repeated. This makes the files smaller and easier to read.
+- Enable players to exit the game whenever they want to make it more user-friendly.
 
+### Game Concept:
+Allow players to choose which team they want to join. This way, the game could be extended with the existing built-in stories and the random function.
 
 
 ## Testing
